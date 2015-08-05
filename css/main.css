@@ -1,0 +1,182 @@
+body {
+  font-family: Verdana, sans-serif;
+}
+header.header {
+  padding-top: 7px;
+}
+.center-header {
+  padding-left: 57px;
+}
+.enter-links {
+  font-family: 'centurygothicbold';
+  font-size: 15px;
+  margin-top: 48px;
+}
+.enter-links a {
+  color: #2e2a30;
+}
+.enter-links li {
+  float: left;
+  margin-right: 20px;
+}
+.second-field input {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  background-color: #efefef;
+  height: 28px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  padding-left: 10px;
+}
+.bot-list {
+  font-size: 15px;
+  margin-top: 16px;
+}
+.bot-list ul {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: stretch;
+}
+.bot-list a {
+  color: #100f10;
+  text-decoration: none !important;
+  border-bottom: 1px dashed #100f10;
+  padding-bottom: 5px;
+}
+.time-header {
+  color: #727272;
+  font-size: 13px;
+}
+.tel-header {
+  font-size: 26px;
+  color: #ed2024;
+}
+.tel-header span {
+  color: #838383;
+}
+.get-call {
+  display: inline-block;
+  color: black !important;
+  font-size: 15px;
+  text-decoration: none !important;
+  padding-bottom: 2px;
+  border-bottom: 1px dashed black;
+  margin-top: 5px;
+}
+.center-link {
+  padding-left: 46px;
+}
+.center-link .globus {
+  margin-right: 22px;
+}
+.right-header {
+  padding-left: 60px;
+  padding-top: 63px;
+}
+.navbar {
+  margin-top: 18px;
+}
+.price {
+  text-transform: uppercase;
+  display: block;
+  float: right;
+  width: 65px;
+  height: 27px;
+  background-color: #ed2024;
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 9px;
+  font-family: Verdana, sans-serif;
+}
+.carousel-wrapper {
+  margin-top: 25px;
+}
+.carousel-wrapper .small-title {
+  color: #523e59;
+}
+.carousel-wrapper .small-title img {
+  margin-right: 7px;
+  position: relative;
+  top: -3px;
+}
+.carousel-wrapper .big-title {
+  text-transform: uppercase;
+}
+.carousel-wrapper .big-title h1 {
+  font-size: 38px;
+  color: #523e59;
+  font-family: 'CenturyGothicRegulat';
+  margin-top: 30px;
+}
+.carousel-wrapper .header {
+  position: relative;
+}
+.carousel-wrapper .social {
+  position: absolute;
+  z-index: 2;
+  right: 5px;
+  bottom: 13px;
+}
+.navbar-nav > li {
+  padding-right: 40px;
+}
+.navbar-nav > li:first-child {
+  padding-right: 30px;
+}
+.navbar-nav > li:nth-child(2) {
+  padding-right: 51px;
+}
+.navbar-nav > li:nth-child(3) {
+  padding-right: 46px;
+}
+.navbar-nav > li:nth-child(5) {
+  padding-right: 48px;
+}
+.navbar-nav > li:nth-child(6) {
+  padding-right: 53px;
+}
+.navbar-nav > li:last-child {
+  padding-right: 0;
+}
+.my-carousel {
+  margin-top: 25px;
+}
+.my-carousel .carousel-control.left,
+.my-carousel .carousel-control.right {
+  display: none;
+}
+.my-carousel > .carousel-inner {
+  text-align: center;
+}
+.my-carousel > .carousel-inner img {
+  display: inline;
+}
+.my-carousel .carousel-indicators {
+  bottom: 7px;
+}
+.my-carousel .carousel-indicators li {
+  border: 0;
+  background: url(../images/indicator.png) no-repeat;
+  width: 17px;
+  height: 17px;
+  margin: 0;
+  margin-right: 15px;
+}
+.my-carousel .carousel-indicators li:hover {
+  width: 17px;
+  height: 17px;
+  background: url(../images/indicator-h.png) no-repeat;
+  background-size: contain;
+}
+.my-carousel .carousel-indicators li.active {
+  width: 27px;
+  height: 27px;
+  position: relative;
+  top: 4px;
+  background: url(../images/indicator-a.png) no-repeat;
+}
