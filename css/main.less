@@ -2,6 +2,10 @@
 @main-color: #523e59;
 @text: #100f10;
 
+.container {
+    width: 1185px !important;
+  }
+
 body{
 	font-family: Verdana,sans-serif;
 }
@@ -20,6 +24,11 @@ header.header{
 
 		a{
 			color: #2e2a30;
+			text-decoration: none !important;
+
+				&:hover{
+					border-bottom: 1px solid #2e2a30;
+				}
 		}
 		li{
 			float: left;
@@ -58,6 +67,15 @@ header.header{
 			text-decoration: none !important;
 			border-bottom: 1px dashed @text;
 			padding-bottom: 5px;
+
+				&:active{
+					border:0;
+					border-bottom: 1px dashed @text;
+					outline: 0;
+				}
+				&:hover{
+					border-bottom-color: transparent;
+				}
 		}
 }
 
@@ -175,6 +193,7 @@ header.header{
 
 .my-carousel{
 	margin-top: 25px;
+	min-width: 1185px;
 
 		.carousel-control.left,
 		.carousel-control.right{
@@ -225,6 +244,11 @@ header.header{
 
 		a{
 			color: @text;
+			text-decoration: none !important;
+
+				&:hover{
+					border-bottom: 1px solid @text;
+				}
 		}
 		ul{
 			list-style-type: disc;
@@ -718,6 +742,11 @@ header.header{
 
 		a{
 			color: @text;
+			text-decoration: none !important;
+
+				&:hover{
+					border-bottom: 1px solid @text;
+				}
 		}
 		li{
 			margin-bottom: 2px;
@@ -804,8 +833,13 @@ header.header{
    	}
 }
 .flash-land{
-	color: #474747;
+	color: #474747 !important;
 	font-size: 13px;
+	text-decoration: none !important;
+
+		&:hover span{
+			border-bottom: 1px solid #474747;
+		}
 }
 .flash{
 	padding-left: 39px;
@@ -921,10 +955,6 @@ header.header{
 }
 .time-input{
 	position: relative;
-
-		&:hover{
-			z-index: 2;
-		}
 }
 .time-input:focus + .time-for{
 	display: none;
@@ -942,3 +972,8 @@ header.header{
 .services a{
 	text-decoration: none !important;
 }
+
+.navbar-default .navbar-nav > li > a{
+	font-family: 'MuseoSansBold';
+}
+

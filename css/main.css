@@ -1,3 +1,6 @@
+.container {
+  width: 1185px !important;
+}
 body {
   font-family: Verdana, sans-serif;
 }
@@ -14,6 +17,10 @@ header.header {
 }
 .enter-links a {
   color: #2e2a30;
+  text-decoration: none !important;
+}
+.enter-links a:hover {
+  border-bottom: 1px solid #2e2a30;
 }
 .enter-links li {
   float: left;
@@ -45,6 +52,14 @@ header.header {
   text-decoration: none !important;
   border-bottom: 1px dashed #100f10;
   padding-bottom: 5px;
+}
+.bot-list a:active {
+  border: 0;
+  border-bottom: 1px dashed #100f10;
+  outline: 0;
+}
+.bot-list a:hover {
+  border-bottom-color: transparent;
 }
 .time-header {
   color: #727272;
@@ -145,6 +160,7 @@ header.header {
 }
 .my-carousel {
   margin-top: 25px;
+  min-width: 1185px;
 }
 .my-carousel .carousel-control.left,
 .my-carousel .carousel-control.right {
@@ -188,6 +204,10 @@ header.header {
 }
 .sidebar a {
   color: #100f10;
+  text-decoration: none !important;
+}
+.sidebar a:hover {
+  border-bottom: 1px solid #100f10;
 }
 .sidebar ul {
   list-style-type: disc;
@@ -645,6 +665,10 @@ header.header {
 }
 .foot-list a {
   color: #100f10;
+  text-decoration: none !important;
+}
+.foot-list a:hover {
+  border-bottom: 1px solid #100f10;
 }
 .foot-list li {
   margin-bottom: 2px;
@@ -719,8 +743,12 @@ header.header {
   margin-bottom: 6px;
 }
 .flash-land {
-  color: #474747;
+  color: #474747 !important;
   font-size: 13px;
+  text-decoration: none !important;
+}
+.flash-land:hover span {
+  border-bottom: 1px solid #474747;
 }
 .flash {
   padding-left: 39px;
@@ -831,9 +859,6 @@ header.header {
 .time-input {
   position: relative;
 }
-.time-input:hover {
-  z-index: 2;
-}
 .time-input:focus + .time-for {
   display: none;
 }
@@ -847,4 +872,7 @@ header.header {
 }
 .services a {
   text-decoration: none !important;
+}
+.navbar-default .navbar-nav > li > a {
+  font-family: 'MuseoSansBold';
 }
