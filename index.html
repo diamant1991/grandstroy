@@ -13,9 +13,7 @@
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/bootstrap.css">
-	<link rel="stylesheet" href="less/bootstrap.less">
 	<link rel="stylesheet" href="css/main.css">
-	<link rel="stylesheet" href="css/main.less">
 	<script src="js/less.min.js"></script>
 	<script src="js/modernizr-2.8.3.min.js"></script>	
 </head>
@@ -568,8 +566,13 @@
 							</div>
 							<div class="col-xs-4">
 								<p>Время звонка</p>
-								<input type="text" class="time-input">
-								<div class="time-for">c 9<sup>00</sup> до 14<sup>30</sup></div>
+								<!-- <label for="input-time" class="input-hint"><div class="time-for">c 9<sup>00</sup> до 14<sup>30</sup></div></label>
+								<input type="text" class="time-input" name="input-time"> -->
+								<div class="placeholder">
+						        <label for="input-name" class="input-hint">c 9<sup>00</sup> до 14<sup>30</sup></label>
+						        <input class="input-text" type="text" id="input-name" value="" >
+						    </div>
+
 							</div>
 						</div>
 						<input type="submit" value="Отправить заявку" class="s-sub">
