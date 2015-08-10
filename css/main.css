@@ -98,6 +98,7 @@ header.header {
 }
 .center-link .globus {
   margin-right: 22px;
+  text-decoration: none !important;
 }
 .right-header {
   padding-left: 60px;
@@ -150,7 +151,7 @@ header.header {
   bottom: 13px;
 }
 .navbar-nav > li {
-  padding-right: 45.5px;
+  padding-right: 47.5px;
 }
 .my-carousel {
   margin-top: 25px;
@@ -620,6 +621,17 @@ header.header {
   top: 52px;
   cursor: pointer;
   text-decoration: none;
+}
+.carousel-button-left a:active,
+.carousel-button-right a:active,
+.carousel-button-left2 a:active,
+.carousel-button-right2 a:active,
+.carousel-button-left a:focus,
+.carousel-button-right a:focus,
+.carousel-button-left2 a:focus,
+.carousel-button-right2 a:focus {
+  outline: 0;
+  border: 0;
 }
 .carousel-button-left a {
   left: 37px;
