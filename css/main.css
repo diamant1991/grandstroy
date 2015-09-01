@@ -1,14 +1,3 @@
-a:active {
-  outline: 0;
-}
-.container {
-  padding-left: 30px;
-  padding-right: 30px;
-  width: 1215px !important;
-}
-.carousel-caption {
-  text-shadow: none;
-}
 body {
   font-family: Verdana, sans-serif;
   min-width: 1215px;
@@ -51,10 +40,17 @@ header.header {
 }
 .input-search .btn-search {
   position: absolute;
-  right: 0;
-  top: 0;
+  right: 3px;
+  top: 3px;
   z-index: 2;
   border: 0;
+  margin: 0 !important;
+  background-color: transparent;
+  outline: 0;
+}
+.input-search .btn-search span {
+  color: #523e59;
+  font-size: 20px;
 }
 .bot-list {
   font-size: 15px;
@@ -323,6 +319,12 @@ header.header {
 .tovar .title .price-link span {
   padding-left: 17px;
 }
+.tovar .title .price-deke {
+  top: 30px;
+}
+.tovar .title .price-icopal {
+  top: 0;
+}
 .tovar .title .download {
   bottom: -4px;
 }
@@ -404,6 +406,31 @@ header.header {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
+}
+.tovar-item-container:hover {
+  border-color: #795885;
+}
+.tovar-item-container .item-img {
+  position: relative;
+}
+.flag {
+  display: block;
+  position: absolute;
+  top: 15px;
+  left: 7px;
+  width: 71px;
+  height: 39px;
+  z-index: 2;
+  background: url(../images/flag.png) no-repeat;
+  color: white;
+  font-family: Verdana, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+}
+.flag span {
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  font-style: italic;
 }
 .make-request {
   margin-top: 30px;
@@ -753,6 +780,9 @@ header.header {
   top: 9px;
   padding-left: 6px;
 }
+.logo-foot a {
+  text-decoration: none !important;
+}
 .foot-social {
   color: #727272;
   font-size: 13px;
@@ -773,14 +803,6 @@ header.header {
 .flash {
   padding-left: 39px;
   padding-top: 21px;
-}
-.carousel-caption {
-  width: 1185px;
-  left: 50% !important;
-  top: 0;
-  right: auto !important;
-  bottom: auto !important;
-  margin-left: -592.5px;
 }
 .car-block {
   background: rgba(0, 0, 0, 0.54);
@@ -930,4 +952,8 @@ header.header {
 }
 .hide {
   left: -9999em !important;
+}
+.deke-tovar h2 {
+  font-size: 36px;
+  font-family: 'centurygothicbold';
 }

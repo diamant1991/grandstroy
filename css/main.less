@@ -1,21 +1,8 @@
+@import "../less/variables.less";
 
-@main-color: #523e59;
-@text: #100f10;
 
-a:active{
-	outline:0;
-}
-
-.container {
-	padding-left: 30px;
-	padding-right: 30px;
-    width: 1215px !important;
-  }
-.carousel-caption{
-	text-shadow:none;
-}
 body{
-	font-family: Verdana,sans-serif;
+	font-family: @font-family-verdana;
 	min-width: 1215px;
 }
 header.header{
@@ -73,7 +60,7 @@ header.header{
 			outline: 0;
 
 				span{
-					color: @main-color;
+					color: @nav-active;
 					font-size: 20px;
 				}
 		}
@@ -91,14 +78,14 @@ header.header{
 		}
 
 		a{
-			color: @text;
+			color: @text-color;
 			text-decoration: none !important;
-			border-bottom: 1px dashed @text;
+			border-bottom: 1px dashed @text-color;
 			padding-bottom: 5px;
 
 				&:active{
 					border:0;
-					border-bottom: 1px dashed @text;
+					border-bottom: 1px dashed @text-color;
 					outline: 0;
 				}
 				&:hover{
@@ -171,7 +158,7 @@ header.header{
 	margin-top: 25px;
 
 		.small-title{
-			color: @main-color;
+			color: @nav-active;
 
 				img{
 					margin-right: 7px;
@@ -184,7 +171,7 @@ header.header{
 
 				h1{
 					font-size: 38px;
-					color: @main-color;
+					color: @nav-active;
 					font-family: 'CenturyGothicRegulat';
 					margin-top: 30px;
 				}
@@ -257,11 +244,11 @@ header.header{
 	padding-right: 64px;
 
 		a{
-			color: @text;
+			color: @text-color;
 			text-decoration: none !important;
 
 				&:hover{
-					border-bottom: 1px solid @text;
+					border-bottom: 1px solid @text-color;
 				}
 		}
 		ul{
@@ -337,7 +324,7 @@ header.header{
 .serv-title{
 	font-size: 11px;
 	text-align: center;
-	color: @text;
+	color: @text-color;
 }
 
 .services .col-xs-3{
@@ -363,7 +350,7 @@ header.header{
 		h2{
 			margin-top: 0;
 			font-family: 'CenturyGothicRegulat';
-			color: @main-color;
+			color: @nav-active;
 		}
 }
 
@@ -387,6 +374,12 @@ header.header{
 					span{
 						padding-left: 17px;
 					}
+			}
+			.price-deke{
+				top:30px;
+			}
+			.price-icopal{
+				top:0;
 			}
 			.download{
 				bottom: -4px;
@@ -434,7 +427,7 @@ header.header{
 }
 .tovar-desc{
 	font-size: 14px;
-	color: @text;
+	color: @text-color;
 	font-family: Verdana,sans-serif;
 	line-height: 1.6;
 	margin-top: 5px;
@@ -481,7 +474,37 @@ header.header{
 	-webkit-border-radius: 5px;
 		-moz-border-radius: 5px;
 	        border-radius: 5px;
+
+	       &:hover{
+	       	border-color: #795885;
+	       }
+
+	        	.item-img{
+	        		position:relative;
+	        	}
 }
+.flag{
+	display: block;
+	position: absolute;
+	top: 15px;
+	left: 7px;
+	width: 71px;
+	height:39px;
+	z-index: 2;
+	background: url(../images/flag.png)no-repeat;
+	color: #fff;
+	font-family: Verdana,sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+
+
+	    span{
+			font-family: Arial,sans-serif;
+			font-size: 12px;
+			font-style: italic;
+	    }
+}
+
 
 .make-request{
 	margin-top: 30px;
@@ -521,7 +544,7 @@ header.header{
 			height: 40px;
 			border: 0;
 			outline: 0;
-			color: @text;
+			color: @text-color;
 			font-size: 16px;
 			font-family: Vardana,sans-serif;
 			text-align: center;
@@ -559,14 +582,14 @@ header.header{
 
 }
 
-.input-container input::-webkit-input-placeholder {color:@text;}
-.input-container input::-moz-placeholder          {color:@text;}
-.input-container input:-moz-placeholder           {color:@text;}
-.input-container input:-ms-input-placeholder      {color:@text;}
+.input-container input::-webkit-input-placeholder {color:@text-color;}
+.input-container input::-moz-placeholder          {color:@text-color;}
+.input-container input:-moz-placeholder           {color:@text-color;}
+.input-container input:-ms-input-placeholder      {color:@text-color;}
 
 .viewed{
 	padding-bottom: 32px;
-	border-bottom: 10px solid @main-color;
+	border-bottom: 10px solid @nav-active;
 }
 .viewed .center-container{
 	margin-left: 0;
@@ -575,12 +598,12 @@ header.header{
 	padding-left: 5px;
 
 	h2{
-		color: @main-color;
+		color: @nav-active;
 		margin-top: 24px;
 		font-family: 'CenturyGothicRegulat';
 	}
 	p{
-		color: @text;
+		color: @text-color;
 		font-size: 14px;
 		line-height: 1.6;
 	}
@@ -595,7 +618,7 @@ header.header{
 	margin-top: -5px;
 
 	h2{
-		color: @main-color;
+		color: @nav-active;
 		font-family: 'CenturyGothicRegulat';
 		margin-top: 0;
 		line-height: 1;
@@ -608,7 +631,7 @@ header.header{
 }
 
 .item-star span{
-	color: @text;
+	color: @text-color;
 	font-size: 14px;
 	position: relative;
 	top: 2px;
@@ -669,7 +692,7 @@ header.header{
 			vertical-align: middle;
 		}
 		.rating{
-			color: @text;
+			color: @text-color;
 			font-size: 14px;
 			margin-top: 10px;
 
@@ -745,7 +768,7 @@ header.header{
 			margin-bottom: 0;
 		}
 		.links{
-			color: @text;
+			color: @text-color;
 			text-decoration: none;
 			text-decoration: underline;
 			display: inline-block;
@@ -763,14 +786,14 @@ header.header{
 }
 .foot-list{
 	font-size: 14px;
-	color: @text;
+	color: @text-color;
 
 		a{
-			color: @text;
+			color: @text-color;
 			text-decoration: none !important;
 
 				&:hover{
-					border-bottom: 1px solid @text;
+					border-bottom: 1px solid @text-color;
 				}
 		}
 		li{
@@ -813,7 +836,7 @@ header.header{
 
 .bot-block{
 	font-size: 14px;
-	color: @text;
+	color: @text-color;
 	margin-top: 41px;
 
 		.left-text{
@@ -838,7 +861,7 @@ header.header{
 
 .logo-foot{
 	font-size: 14px;
-	color: @text;
+	color: @text-color;
 	padding-left: 4px;
 
 		span{
@@ -874,14 +897,7 @@ header.header{
    padding-top: 21px;
 }
 
-.carousel-caption{
-	width: 1185px;
-	left: 50% !important;
-	top: 0;
-	right: auto !important;
-	bottom: auto !important;
-	margin-left: -592.5px;
-}
+
 
 .car-block{
 	 background: rgba(0,0,0,0.54);
@@ -1000,7 +1016,7 @@ header.header{
 	 position: absolute;
     margin-top: 8px;
     margin-left: 103px;
-    color: @text;
+    color: @text-color;
     font-size: 16px;
     z-index: 1;
 
@@ -1022,7 +1038,7 @@ header.header{
 
   		label{
   			display:block;
-  			color: @text;
+  			color: @text-color;
       	font-size: 16px;
   		}	
  }
@@ -1044,3 +1060,49 @@ header.header{
 
 
 
+.deke-tovar h2{
+	font-size: 36px;
+	font-family: 'centurygothicbold';
+}
+
+.h1{
+	font-family: 'CenturyGothicRegulat';
+	font-size: 38px;
+	color:#523e59;
+	text-transform: uppercase;
+}
+.call_banner{
+	height: 290px;
+	overflow: hidden;
+	margin-top: 15px;
+	background: rgb(236, 236, 236);
+	background: -moz-linear-gradient(90deg, rgb(236, 236, 236) 0%, rgb(255, 255, 255) 100%);
+	background: -webkit-linear-gradient(90deg, rgb(236, 236, 236) 0%, rgb(255, 255, 255) 100%);
+	background: -o-linear-gradient(90deg, rgb(236, 236, 236) 0%, rgb(255, 255, 255) 100%);
+	background: -ms-linear-gradient(90deg, rgb(236, 236, 236) 0%, rgb(255, 255, 255) 100%);
+	background: linear-gradient(180deg, rgb(236, 236, 236) 0%, rgb(255, 255, 255) 100%);
+
+		.container{
+			position: relative;
+		}
+
+		img{
+			position: absolute;
+			top: 5px;
+			right: 120px;
+		}
+}
+.banner-text{
+	width: 490px;
+	height: 290px;
+	display:table;
+	text-align: right;
+	font-family: 'AGLettericaCondLRegular';
+	font-size: 48px;
+	color: @text-color-second;
+	line-height: 1.2;
+}
+.banner-cell{
+	display:table-cell;
+	vertical-align: middle;
+}

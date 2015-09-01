@@ -6,6 +6,9 @@
 // Container widths
 //
 // Set the container width, and override it for fixed navbars in media queries.
+a:active{
+  outline:0;
+}
 
 .container {
   .container-fixed();
@@ -82,3 +85,9 @@
 @media (min-width: @screen-lg-min) {
   .make-grid(lg);
 }
+
+  .container {
+   padding-left: 30px;
+   padding-right: 30px;
+    width: 1215px !important;
+  }

@@ -26,3 +26,12 @@
          url('../fonts/MuseoSansBold.svg#MuseoSansBold') format('svg');
 }
 
+@font-face {
+    font-family: 'AGLettericaCondLRegular';
+    src: url('../fonts/AGLettericaCondLRegular.eot');
+    src: url('../fonts/AGLettericaCondLRegular.eot') format('embedded-opentype'),
+         url('../fonts/AGLettericaCondLRegular.woff2') format('woff2'),
+         url('../fonts/AGLettericaCondLRegular.woff') format('woff'),
+         url('../fonts/AGLettericaCondLRegular.ttf') format('truetype'),
+         url('../fonts/AGLettericaCondLRegular.svg#AGLettericaCondLRegular') format('svg');
+}
