@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+	<title>Главная_2</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="keywords" content="" >
+	<meta name="description" content="">
+	<!-- <link rel="stylesheet" href="css/reset.css"> -->
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet/less" href="less/bootstrap.less">
+	<!--<link rel="stylesheet" href="css/bootstrap.css">-->
+	<link rel="stylesheet/less" href="css/main.less">
+	<!--<link rel="stylesheet" href="css/main.css">-->
+	<script src="js/modernizr-2.8.3.min.js"></script>
+</head>
+<body>
+
+
+
+
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/less.min.js"></script>
+<script src="js/carousel.js"></script>
+<script src="js/script.js"></script>
+<script>
+	
+
+$(document).ready(function() {
+
+	$('#file').change(function(){
+
+		$('#file').each(function() {
+			var name = this.value;
+		   reWin = /.*\\(.*)/;
+			var fileTitle = name.replace(reWin, "$1");
+			reUnix = /.*\/(.*)/;
+			fileTitle = fileTitle.replace(reUnix, "$1");
+			$('#name').html(fileTitle);
+	   });
+
+	});
+
+});
+
+</script>

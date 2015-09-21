@@ -5,6 +5,10 @@ body {
 header.header {
   padding-top: 7px;
 }
+.block-vertical {
+  display: table-cell;
+  vertical-align: middle;
+}
 .center-header {
   padding-left: 57px;
 }
@@ -1437,4 +1441,94 @@ header.header {
 .advantages {
   background: url(../images/advantages.jpg) no-repeat 50%;
   background-size: cover;
+  padding-bottom: 30px;
+}
+.advantages h2 {
+  font-size: 30px;
+  color: #523e59;
+  font-family: 'CenturyGothicRegulat';
+}
+.advantages .number {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  background-color: #e5e5e5;
+  text-align: center;
+  color: #312535;
+  font-size: 14px;
+  line-height: 26px;
+  margin-bottom: 5px;
+}
+.adv-block {
+  text-align: center;
+}
+.adv-block .adv-title {
+  color: #2e2a30;
+  font-size: 22px;
+  font-family: 'centurygothicbold';
+  line-height: 16px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+.adv-block .adv-title span {
+  font-size: 14px;
+}
+.adv-block .adv-img {
+  height: 115px;
+  position: relative;
+}
+.adv-block .adv-text {
+  color: #100f10;
+  font-size: 14px;
+}
+.adv-block .adv-star {
+  position: absolute;
+  top: 50%;
+  margin-top: -7.5px;
+  right: -30px;
+  z-index: 2;
+}
+.pros-img {
+  display: table;
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  table-layout: fixed;
+  background-color: #e4dfe6;
+  text-align: center;
+}
+.pros-img img {
+  max-width: 100%;
+  height: auto;
+}
+.pros-img-center {
+  display: table-cell;
+  vertical-align: middle;
+}
+.pros-text {
+  color: #100f10;
+  font-size: 14px;
+  display: table;
+  height: 88px;
+}
+.pros-text .title {
+  color: #2e2a30;
+  font-size: 18px;
+  font-family: 'centurygothicbold';
+  line-height: 1.1;
+}
+.pros-block {
+  margin-bottom: 10px;
+}
+.left-adv {
+  padding-right: 30px;
+}
+.pros-work-container {
+  padding-left: 30px;
+}
+.sliders-wrapper .container {
+  width: 950px;
 }

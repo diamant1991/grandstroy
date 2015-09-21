@@ -571,6 +571,18 @@ header.header{
 					padding-left: 17px;
 				}
 		}
+		.mater-input{
+			text-align: left;
+			padding-left: @line-height-computed;
+			padding-right: @line-height-computed;
+
+				input[type="text"]{
+					width: 100%;
+					padding-right: @line-height-computed;
+					text-align: left;
+					padding-left: @padding-large-vertical;
+				}
+		}
 }
 
 .s-sub{
@@ -1516,6 +1528,12 @@ header.header{
 .delivery-carousel{
 	background: #f3f3f3;
 	padding-bottom: 30px;
+
+		.tovar-item-car .carousel-button-left2 a,
+		.tovar-item-car .carousel-button-right2 a{
+			top: 50%;
+			margin-top: -34px;
+		}
 }
 
 .delivery{
@@ -1684,4 +1702,205 @@ header.header{
 }
 .pros-work-container{
 	padding-left: @grid-gutter-width;
+}
+.sliders-wrapper{
+	padding: 40px 0;
+
+		.container{
+			width: 950px !important;
+		}
+		.main-h2{
+			padding-left: 25px;
+		}
+		header{
+			position: relative;
+		}
+		.view-all{
+			position: absolute;
+			z-index: 2;
+			right:25px;
+			bottom: 0;
+			font-size: @font-size-base;
+			color: @text-color;
+			text-decoration: underline;
+		}
+}
+.main-h2{
+	font-family: 'CenturyGothicRegulat';
+	color: @nav-active;
+	margin-top: 0;
+}
+.bx-item{
+	text-align: center;
+	width: 177px;
+	padding-right: 15px;
+	
+		.item-star{
+			margin-top: 20px;
+		}
+}
+.bx-item-container{
+	border: 1px solid #c0b5c0;
+	-webkit-border-radius: @tooltip-arrow-width;
+	-moz-border-radius: @tooltip-arrow-width;
+	border-radius: @tooltip-arrow-width;
+	padding: @tooltip-arrow-width;
+}
+.bx-title{
+	width: 100%;
+	height: 75px;
+	display: table;
+	font-family: 'centurygothicbold';
+	font-size: @modal-inner-padding;
+	color: @text-color-second;
+
+		span{
+			text-transform: uppercase;
+		}
+}
+.baket-icon{
+	display: block;
+	width: 35px;
+	height: 35px;
+	background: url(../images/basket-icon.png)no-repeat;
+}
+.bx-price{
+	display: table;
+	width: 100%;
+	height: 55px;
+	text-align: left;
+	border-top: 1px dashed #a0a0a0;
+	margin-top: @padding-large-vertical;
+
+		.bx-number{
+			color: @text-color;
+			font-size: @font-size-h3;
+
+				span{
+					font-size: @padding-large-horizontal;
+				}
+		}
+}
+.best-img{
+	position: relative;
+	text-align: center;
+
+		.new-icon{
+			position: absolute;
+			right:-5px;
+			top: 5px;
+			z-index: 2;
+		}
+		.main-best-img{
+			max-width: 100%;
+			height: auto;
+		}
+}
+.new_releases{
+	.car-t-block{
+		width: 177px;
+	}
+	.tovar-item-block{
+		padding-right: 15px;
+	}
+}
+.bestsellers{
+	padding-bottom: 40px;
+}
+.bestsellers .tovar-item-car .carousel-button-right2 a,
+.bestsellers .tovar-item-car .carousel-button-left2 a{
+	top:50%;
+	margin-top: -34px;
+}
+
+.new_releases{
+	padding-bottom: 40px;
+	.title{
+		h2{
+			display:inline-block;
+		}
+	}
+	.tovar-item-car{
+		margin-top: 10px;
+	}
+}
+.shares{
+	.car-t-block{
+		width: 440px;
+		padding-right: 15px;
+	}
+	.left-block{
+		width: 225px;
+		float:left;
+		text-align: left;
+		padding-left: 35px;
+
+			h5{
+				color: @text-color-second;
+				font-size: 15px;
+				font-family: 'centurygothicbold';
+				line-height: 1.4;
+				margin-top: 0;
+			}
+	}
+	.show-more{
+		position: absolute;
+		bottom: 15px;
+		left:35px;
+		color: @text-color;
+		font-size: 14px;
+		border-bottom: 1px solid @text-color;
+		text-decoration: none !important;
+	}
+	.right-block{
+		width: 195px;
+		float: right;
+	}
+	.tovar-item-container{
+		padding-top: @line-height-computed;
+		position: relative;
+		height:255px;
+		padding-bottom: 0;
+	}
+}
+.file-top{
+	text-align: left; 
+	overflow: hidden;
+	width: 224px; 
+	height: 42px;
+	line-height: 40px; 
+	background: url(../images/file.png)no-repeat;
+	cursor: pointer;
+	padding-left: 50px;
+	float: left;
+
+}
+.file-text{
+	color: @text-color; 
+	font-size: 16px;
+	cursor: pointer;
+}
+#file,
+#file-btn{
+	margin-top: -50px; 
+	width: auto; 
+	margin-left:-410px; 
+	-moz-opacity: 0; 
+	filter: alpha(opacity=0); 
+	opacity: 0; 
+	font-size: 150px; 
+	height: 100px;
+	cursor: pointer;
+}
+.file-block{
+	padding-left: 20px;
+	padding-top: 25px;
+	padding-right: 20px;
+}
+.file-btn{
+	width:49px;
+	height: 42px;
+	background: url(../images/file-btn.png)no-repeat;
+	overflow: hidden;
+	float: right;
 }
