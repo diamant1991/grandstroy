@@ -218,12 +218,12 @@
 				<div class="row">
 					<div class="toogle-link clearfix">
 						<img src="images/kaska.png" height="80" width="166" alt="" class="toggle-img">
-						<div class="col-md-6">
+						<div class="col-xs-6">
 							<div class="row">
 								<a href="#">Фасадные материалы</a>
 							</div>
 						</div>
-						<div class="col-md-6">
+						<div class="col-xs-6">
 							<div class="row">
 								<a href="#" class="active">Кровельные материалы</a>
 							</div>
@@ -344,12 +344,12 @@
 				<div class="row">
 					<h4>Надо поверх левого и правого блока добавить текстовый блок </h4>
 					<div class="mat-text-wrapper clearfix">
-						<div class="col-md-6">
+						<div class="col-xs-6">
 							<div class="row">
 								на всю ширину. Надо же что-то написать про материалы пару слов. Надо поверх левого и правого блока добавить текстовый блок на всю ширину. Надо же что-то написать про материалы пару слов. Надо поверх левого и правого блока добавить текстовый блок на всю ширину. Надо же что-то 
 							</div>
 						</div>
-						<div class="col-md-6">
+						<div class="col-xs-6">
 							<div class="row">
 								на всю ширину. Надо же что-то написать про материалы пару слов. Надо поверх левого и правого блока добавить текстовый блок на всю ширину. Надо же что-то написать про материалы пару слов. Надо поверх левого и правого блока добавить текстовый блок на всю ширину. Надо же что-то 
 							</div>
@@ -1136,26 +1136,5 @@
 <script type="text/javascript" src="js/less.min.js"></script>
 <script src="js/carousel.js"></script>
 <script src="js/script.js"></script>
-<script>
-	
-
-$(document).ready(function() {
-
-	$('#file').change(function(){
-
-		$('#file').each(function() {
-			var name = this.value;
-		   reWin = /.*\\(.*)/;
-			var fileTitle = name.replace(reWin, "$1");
-			reUnix = /.*\/(.*)/;
-			fileTitle = fileTitle.replace(reUnix, "$1");
-			$('#name').html(fileTitle);
-	   });
-
-	});
-
-});
-
-</script>
 </body>
 </html>

@@ -25,4 +25,18 @@ $(document).ready(function() {
     $('.input-text').mouseover(function() {
         if ($(this).val() != '') $(this).prev().addClass('hide');
     });
+
+
+    $('#file').change(function(){
+
+        $('#file').each(function() {
+            var name = this.value;
+           reWin = /.*\\(.*)/;
+            var fileTitle = name.replace(reWin, "$1");
+            reUnix = /.*\/(.*)/;
+            fileTitle = fileTitle.replace(reUnix, "$1");
+            $('#name').html(fileTitle);
+       });
+
+    });
 });
