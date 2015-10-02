@@ -89,12 +89,20 @@
     > a {
       margin-right: 2px;
       line-height: @line-height-base;
-      border: 1px solid transparent;
+      border: 1px solid #c0b5c0;
       background-color: @nav-active;
       color: #ececec;
+      outline:0 !important;
       font-size: 15px;
       font-family: 'centurygothicbold';
       border-radius: @border-radius-base @border-radius-base 0 0;
+
+        &:hover{
+          color: @nav-active;
+          background-color: #f3f3f3;
+          border: 1px solid #c0b5c0;
+          border-bottom-color: transparent;
+        }
     }
 
     // Active state, and its :hover to override normal :hover
@@ -104,7 +112,7 @@
       &:focus {
         color: @nav-active;
         background-color: #f3f3f3;
-        border: 1px solid @nav-tabs-active-link-hover-border-color;
+        border: 1px solid #c0b5c0;
         border-bottom-color: transparent;
         cursor: default;
       }
@@ -245,4 +253,20 @@
   margin-top: -1px;
   // Remove the top rounded corners here since there is a hard edge above the menu
   .border-top-radius(0);
+}
+
+//tabs view
+
+.view-tabs{
+  top: 0;
+  border: 0;
+
+    > li{
+      width: auto;
+
+        > a{
+          border: 0 !important;
+          background-color: transparent !important;
+        }
+    }
 }
