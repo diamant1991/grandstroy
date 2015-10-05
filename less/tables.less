@@ -232,3 +232,23 @@ table {
     }
   }
 }
+.table-description{
+  width:100%;
+   tr{
+    &:nth-child(2n){
+      background-color: #f3f3f3;
+    }
+    td{
+      vertical-align: middle;
+      padding: 5px 10px;
+      color: @text-color;
+      font-size: @font-size-base;
+
+        &:first-child{
+          color: @text-color-second;
+          font-size: 15px;
+          font-family: 'centurygothicbold';
+        }
+    }
+   }
+}
