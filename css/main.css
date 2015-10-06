@@ -2014,6 +2014,7 @@ header.header {
 .product-content {
   border-top: 4px solid #523e59;
   margin-top: 85px;
+  padding-bottom: 20px;
   background-color: #f3f3f3;
 }
 .product-list {
@@ -2048,10 +2049,10 @@ header.header {
   background-color: #523e59;
   font-family: 'centurygothicbold';
 }
-.acces-content .col-xs-3 {
+.acces-content > .col-xs-3 {
   width: 21%;
 }
-.acces-content .col-xs-9 {
+.acces-content > .col-xs-9 {
   width: 79%;
 }
 .subscribe {
@@ -2124,4 +2125,315 @@ header.header {
 }
 .view3 {
   background: url(../images/view3.png) no-repeat;
+}
+.sort-container {
+  margin-top: 35px;
+}
+.slct {
+  display: block;
+  border: 1px solid #ececec;
+  background: white url(../images/select-drop.png) no-repeat 96% 10px;
+  width: 195px;
+  height: 28px;
+  font-family: Verdana, sans-serif;
+  font-size: 14px;
+  color: #100f10 !important;
+  text-decoration: none !important;
+  overflow: hidden;
+  white-space: nowrap;
+  line-height: 24px;
+  padding-left: 5px;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  -webkit-box-shadow: 0px 5px 9px -4px rgba(180, 179, 179, 0.5) inset;
+  -moz-box-shadow: 0px 5px 9px -4px rgba(180, 179, 179, 0.5) inset;
+  box-shadow: 0px 5px 9px -4px rgba(180, 179, 179, 0.5) inset;
+}
+.drop {
+  margin: 0;
+  padding: 0;
+  width: 195px;
+  border: 1px solid #cecece;
+  border-top: none;
+  display: none;
+  position: absolute;
+  background: white;
+}
+.drop li {
+  list-style: none;
+  border-top: 1px dotted #e8e8e8;
+  cursor: pointer;
+  display: block;
+  color: #444444;
+  padding: 4px 15px 4px 25px;
+}
+.drop li:hover {
+  background-color: #e8e8e8;
+  color: #222222;
+}
+.show-view .title {
+  color: #727272;
+  font-size: 13px;
+}
+.show-view li {
+  float: left;
+  height: 31px;
+  line-height: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background: url(../images/view-border.png) no-repeat 100%;
+}
+.show-view li a {
+  display: block;
+  height: 100%;
+  color: #100f10;
+  cursor: pointer;
+}
+.show-view li:first-child {
+  padding-left: 0;
+}
+.show-view li:last-child {
+  font-size: 13px;
+  color: #727272;
+  background: none;
+  padding-right: 0;
+}
+.show-view .size-20 {
+  font-size: 14px;
+}
+.show-view .size-30 {
+  font-size: 18px;
+}
+.show-view .size-50 {
+  font-size: 22px;
+}
+.garanty-text {
+  background-color: #523e59;
+  padding: 15px 0;
+  text-align: center;
+}
+.gar-block h1 {
+  color: white;
+  display: inline-block;
+  line-height: 1;
+  margin: 0;
+  position: relative;
+}
+.gar-block h1 p {
+  text-transform: uppercase;
+  line-height: 1;
+  margin-bottom: 0;
+  font-size: 48px;
+  font-family: 'CenturyGothicRegulat';
+}
+.gar-block h1 span {
+  font-size: 14px;
+  text-align: right;
+  display: block;
+  font-family: 'centurygothicbold';
+}
+.gar-block h1:after {
+  content: "!";
+  display: block;
+  right: -30px;
+  top: -6px;
+  position: absolute;
+  z-index: 2;
+  font-family: 'CenturyGothicRegulat';
+  font-size: 78px;
+  color: white;
+}
+.also-view {
+  padding: 40px 0;
+}
+.also-view .your-view {
+  padding-left: 160px;
+}
+.also-view .tovar-item-block {
+  padding-right: 15px;
+  width: 180px;
+}
+.social-block {
+  text-align: right;
+}
+.write-review .left-block {
+  float: left;
+  width: 525px;
+  height: 625px;
+  text-align: center;
+  padding-top: 60px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.18);
+  position: relative;
+}
+.write-review .left-block h4 {
+  margin-top: 50px;
+  margin-bottom: 15px;
+  color: #2e2a30;
+  font-family: 'centurygothicbold';
+}
+.write-review .left-block p {
+  margin-bottom: 25px;
+  color: #100f10;
+  font-size: 14px;
+}
+.write-review .left-block .link {
+  margin-bottom: 25px;
+}
+.write-review .left-block .link a {
+  color: #100f10;
+  font-size: 14px;
+  border-bottom: 1px solid #100f10;
+  text-decoration: none !important;
+}
+.write-review .right-block {
+  float: right;
+  width: 645px;
+  background-color: white;
+  border-radius: 5px;
+  height: 625px;
+  box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.18);
+  padding: 30px 30px 30px 50px;
+}
+.write-review .autor-text {
+  width: 395px;
+  float: left;
+  border: 2px dashed #ed2024;
+  border-radius: 5px;
+  padding: 8px 10px;
+  color: #100f10;
+  font-size: 14px;
+}
+.write-review .enter-block {
+  float: right;
+  width: 145px;
+}
+.write-review .enter-block .s-sub {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  line-height: 60px;
+  font-size: 24px;
+}
+.fastener-top {
+  position: absolute;
+  z-index: 2;
+  top: 35px;
+  right: -30px;
+}
+.fastener-bottom {
+  position: absolute;
+  z-index: 2;
+  bottom: 55px;
+  right: -30px;
+}
+.view-content {
+  background-color: white;
+  padding: 30px;
+  padding-bottom: 0;
+  border-radius: 5px;
+}
+.view-content .bx-item {
+  width: 171px;
+  margin-bottom: 40px;
+  padding-right: 7px !important;
+}
+.submit-group .s-sub {
+  float: right;
+  width: 270px;
+  margin: 0;
+  font-size: 24px;
+  padding: 0;
+}
+.submit-group .cancel {
+  float: left;
+}
+.get-review-form {
+  margin-top: 30px;
+}
+.get-review-form .rating {
+  margin-bottom: 20px;
+  padding-top: 10px;
+}
+.get-review-form .rating .title {
+  width: 110px;
+  padding-top: 8px;
+  float: left;
+  color: #2e2a30;
+  font-size: 15px;
+  font-family: 'centurygothicbold';
+}
+.get-review-form .rating .star {
+  float: right;
+}
+.submit-group {
+  margin-top: 20px;
+}
+.desc-wrapper {
+  background-color: white;
+  border-radius: 5px;
+  padding: 30px 15px;
+}
+.desc-wrapper h4 {
+  margin: 0;
+  color: #2e2a30;
+  font-family: 'centurygothicbold';
+}
+.table-container {
+  margin-top: 20px;
+}
+.instructions {
+  font-size: 14px;
+  color: #100f10;
+}
+.instructions ul {
+  margin-top: 20px;
+}
+.instructions li {
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 15px;
+}
+.instructions a {
+  color: #100f10;
+  text-decoration: none !important;
+  border-bottom: 1px solid #100f10;
+}
+.instructions .pdf:before {
+  content: "";
+  display: block;
+  width: 25px;
+  height: 25px;
+  background: url(../images/pdf.png) no-repeat;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -12.5px;
+}
+.instructions .rar:before {
+  content: "";
+  display: block;
+  width: 22px;
+  height: 18px;
+  background: url(../images/rar.png) no-repeat;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -9px;
+}
+.desc-text-block {
+  margin-top: 10px;
+}
+.desc-text-block p {
+  color: #100f10;
+  font-size: 14px;
+  margin-top: 10px;
+  margin-bottom: 0;
+  line-height: 1.6;
+}
+.adv-table {
+  display: table;
+  width: 100%;
+  height: 70px;
 }
