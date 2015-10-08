@@ -233,15 +233,15 @@
 		<div class="row">
 			<div class="tabs-container">
 				  <ul class="nav nav-tabs" role="tablist">
-				      <li role="presentation" class="active"><a href="#description" aria-controls="home" role="tab" data-toggle="tab">Описание</a></li>
+				      <li role="presentation"><a href="#description" aria-controls="home" role="tab" data-toggle="tab">Описание</a></li>
 				       <li role="presentation"><a href="#photo" aria-controls="profile" role="tab" data-toggle="tab">Фото</a></li>
-				       <li role="presentation"><a href="#review" aria-controls="messages" role="tab" data-toggle="tab">Отзывы</a></li>
+				       <li role="presentation" class="active"><a href="#review" aria-controls="messages" role="tab" data-toggle="tab">Отзывы</a></li>
 				       <li role="presentation"><a href="#accessories" aria-controls="settings" role="tab" data-toggle="tab">Аксессуары</a></li>
 				       <li role="presentation"><a href="#installation" aria-controls="settings" role="tab" data-toggle="tab">Монтаж</a></li>
 				  </ul>
 
 				  <div class="tab-content">
-					   <div role="tabpanel" class="tab-pane active" id="description">
+					   <div role="tabpanel" class="tab-pane" id="description">
 					   	<h2 class="main-h2">Описание</h2>
 					   	<div class="desc-wrapper">
 					   		<div class="desc-container clearfix">
@@ -677,6 +677,28 @@
 									</div>
 
 									<div class="bottom-block-review clearfix">
+										<div class="likes clearfix">
+											<div class="like-up clearfix">
+												<a href="#">
+													<div class="like-img">
+														<img src="images/like.png" height="18" width="19" alt="">
+													</div>
+													<div class="like-total">
+														<span>64</span>
+													</div>
+												</a>
+											</div>
+											<div class="like-bottom clearfix">
+												<a href="#">
+													<div class="like-img">
+														<img src="images/disable.png" height="18" width="19" alt="">
+													</div>
+													<div class="like-total">
+														<span>23</span>
+													</div>
+												</a>
+											</div>
+										</div>
 										<div class="col-xs-2">
 											<div class="row">
 												<div class="men-img">
@@ -709,7 +731,7 @@
 					   	
 					   </div><!-- description -->
 					   <div role="tabpanel" class="tab-pane" id="photo">...</div>
-					   <div role="tabpanel" class="tab-pane" id="review">
+					   <div role="tabpanel" class="tab-pane active" id="review">
 					   	<h2 class="main-h2">Отзывы</h2>
 					   	<div class="write-review clearfix">
 					   		<div class="left-block">
@@ -770,6 +792,267 @@
 												<input type="submit" class="btn btn-danger btn-lg s-sub" value="Отправить отзыв">
 											</div>
 					   				</form>
+					   			</div>
+					   		</div>
+					   	</div>
+
+					   	<div class="option-reviews">
+					   		<h2 class="main-h2">Отзывы</h2>
+					   		<div class="panel-review-wrapper">
+					   			<div class="top-block-review clearfix">
+										<div class="item-star">
+											<a href="#">
+												<img src="images/star.png" alt="" height="18" width="111">
+												<span>(0)</span>
+											</a>
+										</div>
+										<div class="col-xs-3">
+											<div class="row">
+												<table class="star-list">
+													<tbody><tr>
+														<td>5 звезд</td>
+														<td><progress value="100" max="100"></progress></td>
+														<td>(4)</td>
+													</tr>
+													<tr>
+														<td>4 звезды</td>
+														<td><progress value="0" max="100"></progress></td>
+														<td>(0)</td>
+													</tr>
+													<tr>
+														<td>3 звезды</td>
+														<td><progress value="0" max="100"></progress></td>
+														<td>(0)</td>
+													</tr>
+													<tr>
+														<td>2 звезды</td>
+														<td><progress value="0" max="100"></progress></td>
+														<td>(0)</td>
+													</tr>
+													<tr>
+														<td>1 звезда</td>
+														<td><progress value="0" max="100"></progress></td>
+														<td>(0)</td>
+													</tr>
+												</tbody></table>
+											</div>
+										</div>
+										<div class="col-xs-6">
+											<div class="title">Оставьте свой отзыв о товаре:</div>
+											<div class="tovar-name">Гибкая черепица CertainTeed LandMark Atlantic Blue</div>
+											<div class="tovar-code">Код товара: 002882</div>
+										</div>
+										<div class="col-xs-3">
+											<a href="#" class="btn btn-danger s-sub">Оставить отзыв</a>
+										</div>
+									</div>
+					   		</div>
+
+					   		<div class="maximum-score">
+					   			<h2 class="main-h2">Максимальная оценка</h2>
+					   			<div class="panel-review-wrapper">
+										<div class="bottom-block-review clearfix">
+											<div class="likes clearfix">
+												<div class="like-up clearfix">
+													<a href="#">
+														<div class="like-img">
+															<img src="images/like.png" alt="" height="18" width="19">
+														</div>
+														<div class="like-total">
+															<span>64</span>
+														</div>
+													</a>
+												</div>
+												<div class="like-bottom clearfix">
+													<a href="#">
+														<div class="like-img">
+															<img src="images/disable.png" alt="" height="18" width="19">
+														</div>
+														<div class="like-total">
+															<span>23</span>
+														</div>
+													</a>
+												</div>
+											</div>
+											<div class="col-xs-2">
+												<div class="row">
+													<div class="men-img">
+														<img src="images/men-img.png" alt="" height="155" width="155">
+													</div>
+												</div>
+											</div>
+											<div class="col-xs-10">
+												<div class="row">
+													<div class="men-name">Дмитрий, Москва</div>
+													<div class="date-container">
+														<div class="date">21 марта, 2015</div>
+														<div class="label-date">На Доске</div>
+													</div>
+													<div class="item-star">
+														<a href="#">
+															<img src="images/star.png" alt="" height="18" width="111">
+														</a>
+													</div>
+													<h5>Битумная черепица Тегола – прочность на долгие годы</h5>
+													<p>Моей любимой теще, после приезда из Европы, захотелось срочно поменять крышу на своей даче. Чтобы ее воспоминания не улетучились, а настроение не пропало, пришлось приступить немедленно. Из большого количества предложений по кровле мы выбрали битумную черепицу Тегола. </p>
+													<p>Это мягкая черепица с базальтовыми гранулами во многих своих видах уже не одно десятилетие представлена на рынке кровельных материалов. У нее масса преимуществ – демократичная цена, легкость монтажных работ, качественное сырье, цветовая гамма, а еще она очень хорошо приглушает разного вида звуки. Был выбран вид Готик в коричневом цвете. Вот уже два года, как я любимый зять! А все из-за того, что сделанная моими руками крыша, не течет, не скрипит, и уверенно эксплуатируется!</p>
+												</div>
+												
+											</div>
+										</div>
+					   			</div>
+					   		</div>
+
+					   		<div class="other-review">
+					   			<h2 class="main-h2">Остальные</h2>
+					   			<div class="panel-review-wrapper">
+										<div class="bottom-block-review clearfix">
+											<div class="likes clearfix">
+												<div class="like-up clearfix">
+													<a href="#">
+														<div class="like-img">
+															<img src="images/like.png" alt="" height="18" width="19">
+														</div>
+														<div class="like-total">
+															<span>64</span>
+														</div>
+													</a>
+												</div>
+												<div class="like-bottom clearfix">
+													<a href="#">
+														<div class="like-img">
+															<img src="images/disable.png" alt="" height="18" width="19">
+														</div>
+														<div class="like-total">
+															<span>23</span>
+														</div>
+													</a>
+												</div>
+											</div>
+											<div class="col-xs-2">
+												<div class="row">
+													<div class="men-img">
+														<img src="images/disable-img.png" height="155" width="155" alt="">
+													</div>
+												</div>
+											</div>
+											<div class="col-xs-10">
+												<div class="row">
+													<div class="men-name">Дмитрий, Москва</div>
+													<div class="date-container">
+														<div class="date">21 марта, 2015</div>
+														<div class="label-date">На Доске</div>
+													</div>
+													<div class="item-star">
+														<a href="#">
+															<img src="images/star.png" alt="" height="18" width="111">
+														</a>
+													</div>
+													<h5>Битумная черепица Тегола – прочность на долгие годы</h5>
+													<p>Моей любимой теще, после приезда из Европы, захотелось срочно поменять крышу на своей даче. Чтобы ее воспоминания не улетучились, а настроение не пропало, пришлось приступить немедленно. Из большого количества предложений по кровле мы выбрали битумную черепицу Тегола. </p>
+													<p>Это мягкая черепица с базальтовыми гранулами во многих своих видах уже не одно десятилетие представлена на рынке кровельных материалов. У нее масса преимуществ – демократичная цена, легкость монтажных работ, качественное сырье, цветовая гамма, а еще она очень хорошо приглушает разного вида звуки. Был выбран вид Готик в коричневом цвете. Вот уже два года, как я любимый зять! А все из-за того, что сделанная моими руками крыша, не течет, не скрипит, и уверенно эксплуатируется!</p>
+												</div>
+												
+											</div>
+										</div>
+										<div class="bottom-block-review clearfix">
+											<div class="likes clearfix">
+												<div class="like-up clearfix">
+													<a href="#">
+														<div class="like-img">
+															<img src="images/like.png" alt="" height="18" width="19">
+														</div>
+														<div class="like-total">
+															<span>64</span>
+														</div>
+													</a>
+												</div>
+												<div class="like-bottom clearfix">
+													<a href="#">
+														<div class="like-img">
+															<img src="images/disable.png" alt="" height="18" width="19">
+														</div>
+														<div class="like-total">
+															<span>23</span>
+														</div>
+													</a>
+												</div>
+											</div>
+											<div class="col-xs-2">
+												<div class="row">
+													<div class="men-img">
+														<img src="images/disable-img.png" height="155" width="155" alt="">
+													</div>
+												</div>
+											</div>
+											<div class="col-xs-10">
+												<div class="row">
+													<div class="men-name">Дмитрий, Москва</div>
+													<div class="date-container">
+														<div class="date">21 марта, 2015</div>
+														<div class="label-date">На Доске</div>
+													</div>
+													<div class="item-star">
+														<a href="#">
+															<img src="images/star.png" alt="" height="18" width="111">
+														</a>
+													</div>
+													<h5>Битумная черепица Тегола – прочность на долгие годы</h5>
+													<p>Моей любимой теще, после приезда из Европы, захотелось срочно поменять крышу на своей даче. Чтобы ее воспоминания не улетучились, а настроение не пропало, пришлось приступить немедленно. Из большого количества предложений по кровле мы выбрали битумную черепицу Тегола. </p>
+													<p>Это мягкая черепица с базальтовыми гранулами во многих своих видах уже не одно десятилетие представлена на рынке кровельных материалов. У нее масса преимуществ – демократичная цена, легкость монтажных работ, качественное сырье, цветовая гамма, а еще она очень хорошо приглушает разного вида звуки. Был выбран вид Готик в коричневом цвете. Вот уже два года, как я любимый зять! А все из-за того, что сделанная моими руками крыша, не течет, не скрипит, и уверенно эксплуатируется!</p>
+												</div>
+												
+											</div>
+										</div>
+										<div class="bottom-block-review clearfix">
+											<div class="likes clearfix">
+												<div class="like-up clearfix">
+													<a href="#">
+														<div class="like-img">
+															<img src="images/like.png" alt="" height="18" width="19">
+														</div>
+														<div class="like-total">
+															<span>64</span>
+														</div>
+													</a>
+												</div>
+												<div class="like-bottom clearfix">
+													<a href="#">
+														<div class="like-img">
+															<img src="images/disable.png" alt="" height="18" width="19">
+														</div>
+														<div class="like-total">
+															<span>23</span>
+														</div>
+													</a>
+												</div>
+											</div>
+											<div class="col-xs-2">
+												<div class="row">
+													<div class="men-img">
+														<img src="images/disable-img.png" height="155" width="155" alt="">
+													</div>
+												</div>
+											</div>
+											<div class="col-xs-10">
+												<div class="row">
+													<div class="men-name">Дмитрий, Москва</div>
+													<div class="date-container">
+														<div class="date">21 марта, 2015</div>
+														<div class="label-date">На Доске</div>
+													</div>
+													<div class="item-star">
+														<a href="#">
+															<img src="images/star.png" alt="" height="18" width="111">
+														</a>
+													</div>
+													<h5>Битумная черепица Тегола – прочность на долгие годы</h5>
+													<p>Моей любимой теще, после приезда из Европы, захотелось срочно поменять крышу на своей даче. Чтобы ее воспоминания не улетучились, а настроение не пропало, пришлось приступить немедленно. Из большого количества предложений по кровле мы выбрали битумную черепицу Тегола. </p>
+													<p>Это мягкая черепица с базальтовыми гранулами во многих своих видах уже не одно десятилетие представлена на рынке кровельных материалов. У нее масса преимуществ – демократичная цена, легкость монтажных работ, качественное сырье, цветовая гамма, а еще она очень хорошо приглушает разного вида звуки. Был выбран вид Готик в коричневом цвете. Вот уже два года, как я любимый зять! А все из-за того, что сделанная моими руками крыша, не течет, не скрипит, и уверенно эксплуатируется!</p>
+												</div>
+												
+											</div>
+										</div>
 					   			</div>
 					   		</div>
 					   	</div>
@@ -1528,3 +1811,8 @@
       " - " + $( "#slider-range" ).slider( "values", 1 ) );
   });
   </script>
+
+
+
+  </body>
+  </html>
