@@ -20,6 +20,7 @@
   top: 0;
   right: 0;
   bottom: 0;
+  padding-right: 0 !important;
   left: 0;
   z-index: @zindex-modal;
   -webkit-overflow-scrolling: touch;
@@ -51,11 +52,12 @@
 .modal-content {
   position: relative;
   background-color: @modal-content-bg;
-  border: 1px solid @modal-content-fallback-border-color; //old browsers fallback (ie8 etc)
-  border: 1px solid @modal-content-border-color;
   border-radius: @border-radius-large;
-  .box-shadow(0 3px 9px rgba(0,0,0,.5));
   background-clip: padding-box;
+  padding-top: 35px;
+  padding-bottom: 55px;
+  padding-left: 35px;
+  padding-right: 35px;
   // Remove focus outline from opened modal
   outline: 0;
 }
@@ -129,6 +131,29 @@
   height: 50px;
   overflow: scroll;
 }
+.modal-form{
+  text-align: center;
+
+    input[type="text"]{
+      text-align: center;
+    }
+
+    .s-sub{
+      width: 100%;
+      margin: 0;
+      margin-top: 45px;
+    }
+    .main-h2{
+      margin-bottom: 25px;
+    }
+}
+.modal-img{
+  text-align: center;
+  img{
+    max-width: 100%;
+    height: auto;
+  }
+}
 
 // Scale up the modal
 @media (min-width: @screen-sm-min) {
@@ -137,9 +162,11 @@
     width: @modal-md;
     margin: 30px auto;
   }
-  .modal-content {
-    .box-shadow(0 5px 15px rgba(0,0,0,.5));
+  .get-install-modal{
+    width: 90%;
+    margin: 30px auto;
   }
+
 
   // Modal sizes
   .modal-sm { width: @modal-sm; }
@@ -147,4 +174,18 @@
 
 @media (min-width: @screen-md-min) {
   .modal-lg { width: @modal-lg; }
+}
+
+@media(min-width: @screen-lg){
+  .get-install-modal{
+    width: 1180px;
+    margin: 30px auto;
+  }
+  .modal-form{
+    border-right: 1px solid #d6d5d5;
+    padding-right: 90px;
+  }
+  .modal-content{
+    padding-left: 75px;
+  }
 }
