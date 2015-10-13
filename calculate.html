@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+	<title>Калькулятор</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="keywords" content="" >
+	<meta name="description" content="">
+	<!-- <link rel="stylesheet" href="css/reset.css"> -->
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/jquery-ui.css">
+	<link rel="stylesheet/less" href="less/bootstrap.less">
+	<!--<link rel="stylesheet" href="css/bootstrap.css">-->
+	<link rel="stylesheet/less" href="css/main.less">
+	<!--<link rel="stylesheet" href="css/main.css">-->
+	<script src="js/modernizr-2.8.3.min.js"></script>
+</head>
+<body>
+<header class="header">
+	<div class="container">
+		<div class="row">
+			<div class="top-panel clearfix">
+				<div class="col-xs-3">
+					<div class="row">
+						<a href="#" class="logo">
+							<img src="images/logo.png" height="163" width="292" alt="">
+						</a>
+					</div>
+				</div>
+				<div class="col-xs-6 center-header">
+						<ul class="enter-links clearfix">
+							<li>
+								<a href="#">Войти</a>
+							</li>
+							<li>
+								<a href="#">Регистрация</a>
+							</li>
+						</ul>
+						<div class="col-xs-12 second-field">
+							<div class="row">
+								<div class="col-xs-9">
+									<div class="row">
+										<form>
+											<div class="input-search">
+												<input type="text">
+												<button type="submit" class="btn-search">
+													<span class="glyphicon glyphicon-search" type="submit"></span>
+												</button>
+
+											</div>
+										</form>
+										<div class="clear"></div>
+										<div class="bot-list">
+											<ul>
+												<li>
+													<a href="#">Услуги</a>
+												</li>
+												<li>
+													<a href="#">Доставка по звонку</a>
+												</li>
+												<li>
+													<a href="#">Контакты</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="col-xs-3 center-link">
+									<div class="row">
+										<a href="#" class="globus">
+											<img src="images/globus.png" height="31" width="33" alt="">
+										</a>
+										<a href="#" class="basket">
+											<img src="images/basket.png" height="30" width="39" alt="">
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="clear"></div>
+					
+				</div>
+				<div class="col-xs-3 right-header">
+					<div class="row">
+						<div class="time-header">с 8 до 24 часов, без выходных</div>
+						<div class="tel-header"><span>8 [495]</span> 150 00 44 </div>
+						<a href="#" class="get-call">Мы всегда готовы перезвонить</a>
+					</div>
+				</div>
+			</div>
+
+			<nav class="navbar navbar-default">
+			  <div class="container-fluid">
+				<div class="row">
+			      <ul class="nav navbar-nav">
+				        <li class="active"><a href="#">Кровельные <br>материалы  </a></li>
+				        <li><a href="#">Фасадные <br> материалы </a></li>
+				        <li><a href="#">Материалы <br>для крыши</a></li>
+				        <li><a href="#">Кровельные <br>работы</a></li>
+				        <li><a href="#">Отделка фасадов</a></li>
+				        <li><a href="#">Строительство</a></li>
+				        <li><a href="#">Наши работы</a></li>        
+			      </ul>
+			      <a href="#">
+			      	<div class="price">Цены</div>
+			      </a>
+			    </div><!-- /.navbar-collapse -->
+			  </div><!-- /.container-fluid -->
+			</nav>
+		</div>
+	</div>
+</header><!-- header -->
+
+<section class="breadcrumb-section">
+	<div class="container">
+		<div class="row">
+			<ol class="breadcrumb">
+			   <li>
+			   	<a href="#">
+			   		<span>Главная</span>
+			   	</a>
+			   </li>
+			   <li>
+			   	<a href="#">
+			   		<span>Мягкая кровля</span>
+			   	</a>
+			   </li>
+			   <li class="active">Калькулятор расчета кровли</li>
+			</ol>
+		</div>
+	</div>
+</section>
+
+<section class="product_card_wrapper">
+	<div class="container">
+		<div class="row">
+			<header>
+				<h1 class="main-h1">Расчет мягкой кровли</h1>
+			</header>
+			<div class="main-content clearfix">
+				<aside class="col-xs-3 sidebar">
+					<div class="filter-form">
+						<div class="filter-block">
+							<a class="title">Цена</a>
+							<div id="slider-range"></div>
+							<div class="range-inputs">
+								<span>от</span>
+								<input type="text" class="sliderValue" data-index="0" value="996">
+								<span>до</span>
+	        					<input type="text" class="sliderValue" data-index="1" value="8400">
+        					</div>
+						</div>
+					</div>
+				</aside>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+
+
+<script src="js/jquery.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/less.min.js"></script>
+<script src="js/carousel.js"></script>
+<script src="js/script.js"></script>
+<script>
+	$(document).ready(function() {
+    $("#slider-range").slider({
+        min: 996,
+        range: true,
+        max: 8400,
+        step: 1,
+        values: [996, 8400],
+        slide: function(event, ui) {
+            for (var i = 0; i < ui.values.length; ++i) {
+                $("input.sliderValue[data-index=" + i + "]").val(ui.values[i]);
+            }
+        }
+    });
+
+    $("input.sliderValue").change(function() {
+        var $this = $(this);
+        $("#slider-range").slider("values", $this.data("index"), $this.val());
+    });
+});
+</script>
+</body>
+</html>
