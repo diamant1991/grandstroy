@@ -142,20 +142,566 @@
 				<h1 class="main-h1">Расчет мягкой кровли</h1>
 			</header>
 			<div class="main-content clearfix">
-				<aside class="col-xs-3 sidebar">
+				<aside class="col-xs-3 sidebar sidebar-filter">
 					<div class="filter-form">
 						<div class="filter-block">
-							<a class="title">Цена</a>
-							<div id="slider-range"></div>
-							<div class="range-inputs">
-								<span>от</span>
-								<input type="text" class="sliderValue" data-index="0" value="996">
-								<span>до</span>
-	        					<input type="text" class="sliderValue" data-index="1" value="8400">
-        					</div>
+							<a class="title collapsed">Цена</a>
+							<div class="filter-content">
+								<div class="content-block">
+									<div class="scale">
+										<ul class="scale-list">
+										 	  <li><span>996</span></li>
+					                    <li><span>2847</span></li>
+					                    <li><span>4698</span></li>
+					                    <li><span>6549</span></li>
+					                    <li><span>8400</span></li>
+					                </ul>
+									</div>
+									<div class="slider-var">
+										<div id="slider-range"></div>
+									</div>
+									<div class="range-inputs">
+										<span>от</span>
+										<input type="text" class="sliderValue" data-index="0" value="996">
+										<span>до</span>
+										<input type="text" class="sliderValue" data-index="1" value="8400">
+									 </div>
+								</div>
+							</div>
+						</div>
+						<div class="filter-block">
+							<a class="title with-collapse collapsed" role="button" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Бренд</a>
+							<div class="filter-content collapse" id="collapseExample">
+								<div class="content-block">
+									<ul class="checkbox-list">
+										<li>
+											<input type="checkbox" class="checkbox" id="check1">
+											<label for="check1">Doecke (Дёке)</label>
+										</li>
+										<li>
+											<input type="checkbox" class="checkbox" id="check2">
+											<label for="check2">Tegola (Тегола)</label>
+										</li>
+										<li>
+											<input type="checkbox" class="checkbox" id="check3">
+											<label for="check3">Shinglas (Шинглас)</label>
+										</li>
+										<li>
+											<input type="checkbox" class="checkbox" id="check4">
+											<label for="check4">Ruflex (Руфлекс)</label>
+										</li>
+										<li>
+											<input type="checkbox" class="checkbox" id="check5">
+											<label for="check5">Katepal (Катепал)</label>
+										</li>
+										<li>
+											<input type="checkbox" class="checkbox" id="check6">
+											<label for="check6">Roofshield (Руфшилд)</label>
+										</li>
+										<li>
+											<input type="checkbox" class="checkbox" id="check7">
+											<label for="check7">Icopal (Икопал)</label>
+										</li>
+										<li>
+											<input type="checkbox" class="checkbox" id="check8">
+											<label for="check8">CertaainTeed (СертанТид)</label>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="filter-block">
+							<a class="title with-collapse collapsed" role="button" data-toggle="collapse" href="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">Гарантия</a>
+							<div class="filter-content collapse" id="collapseExample2">
+								<div class="content-block">
+									content
+								</div>
+							</div>
+						</div>
+						<div class="filter-block">
+							<a class="title with-collapse collapsed" role="button" data-toggle="collapse" href="#collapseExample3" aria-expanded="false" aria-controls="collapseExample3">Страна производителя</a>
+							<div class="filter-content collapse" id="collapseExample3">
+								<div class="content-block">
+									content
+								</div>
+							</div>
+						</div>
+						<div class="filter-block">
+							<a class="title with-collapse collapsed" role="button" data-toggle="collapse" href="#collapseExample4" aria-expanded="false" aria-controls="collapseExample4">Формат черепицы</a>
+							<div class="filter-content collapse" id="collapseExample4">
+								<div class="content-block">
+									content
+								</div>
+							</div>
+						</div>
+						<div class="confirmation">
+							<button class="btn btn-danger s-sub confirm-btn">Применить</button>
+							<button class="btn cancel-btn">Сбросить</button>
 						</div>
 					</div>
+					<div class="second-menu">
+						<header class="sidebar-header">
+							Аксессуары <br>для гибкой черепицы
+						</header>
+						<ul>
+							 <li><a href="#">Подкладочный ковер</a></li>
+							 <li><a href="#">Коньково-карнизная полоса</a></li>
+							 <li><a href="#">Ендовый ковер</a></li>
+							 <li><a href="#">Металлические капельники</a></li>
+						</ul>
+					</div>
 				</aside>
+
+				<article class="center-container col-xs-9">
+					<div id="carousel-example-generic" class="carousel slide roof-carousel" data-ride="carousel">
+						  <!-- Wrapper for slides -->
+					  <div class="carousel-inner" role="listbox">
+					    <div class="item active">
+					      <img src="images/carousel.jpg" height="287" width="886">
+					    </div>
+					    <div class="item">
+					      <img src="images/carousel.jpg" height="287" width="886">
+					    </div>
+					    <div class="item">
+					      <img src="images/carousel.jpg" height="287" width="886">
+					    </div>
+					  </div>
+
+					  <!-- Indicators -->
+					  <ol class="carousel-indicators">
+					    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+					    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+					    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+					  </ol>
+
+					</div>
+
+					<div class="services clearfix">
+						<div class="col-xs-3">
+							<div class="row">
+								<a href="#">
+									<div class="serv-block">
+										<div class="serv-icon">
+											<div class="serv-cell">
+												<img src="images/montag.png" alt="" height="84" width="129">
+											</div>
+										</div>
+										<div class="serv-title">Заказать монтаж</div>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="col-xs-3">
+							<div class="row">
+								<a href="#">
+									<div class="serv-block">
+										<div class="serv-icon">
+											<div class="serv-cell">
+												<img src="images/call-objec.png" alt="" height="91" width="121">
+											</div>
+										</div>
+										<div class="serv-title">Вызов замерщика на обьект</div>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="col-xs-3">
+							<div class="row">
+								<a href="#">
+									<div class="serv-block">
+										<div class="serv-icon">
+											<div class="serv-cell">
+												<img src="images/selection.png" alt="" height="85" width="132">
+											</div>
+										</div>
+										<div class="serv-title">Подбор цвета кровли</div>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="col-xs-3">
+							<div class="row">
+								<a href="#">
+									<div class="serv-block">
+										<div class="serv-icon">
+											<div class="serv-cell">
+												<img src="images/calculate.png" alt="" height="93" width="105">
+											</div>
+										</div>
+										<div class="serv-title">Расчитать стоимость кровли</div>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="calc-wrapper">
+						<h2 class="main-h2">Калькулятор расчета кровли из гибкой черепицы</h2>
+						<p>Гибкая черепица Shinglas постепенно завоевывает популярность среди жителей нашей страны.
+						Для начала стоит сказать, что кровельная черепица Шинглас является пятислойным материалом, характеризующимся удивительной долговечностью и прочностью. Отдельного внимания заслуживает простота и лёгкость её укладки. От вас не понадобятся ни специальные инструменты, ни какие-либо профессиональные навыки! Представленная гибкая черепица монтируется на сплошное основание из ОСП-плит или фанеры ФСФ.</p>
+						<div class="step-container">
+							<div class="title"><span>Шаг 1</span>. Введите параметры вашей крыши</div>
+							<div class="step-calc clearfix">
+								<div class="col-xs-9">
+									<div class="row">
+										<div class="calc-house">
+											<div class="block-vertical">
+												<img src="images/house-calc.png" height="391" width="541" alt="">
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-xs-3">
+									<div class="row">
+										<div class="calc-inputs">
+											<div class="calc-input-block">
+												<p>площадь кровли м2</p>
+												<input type="text">
+											</div>
+											<div class="calc-input-block">
+												<p>длина ребер/хребтов м</p>
+												<input type="text">
+											</div>
+											<div class="calc-input-block">
+												<p>длина конька м</p>
+												<input type="text">
+											</div>
+											<div class="calc-input-block">
+												<p>длина карнизных свесов м</p>
+												<input type="text">
+											</div>
+											<div class="calc-input-block">
+												<p>длина примыканий м</p>
+												<input type="text">
+											</div>
+											<div class="calc-input-block">
+												<p>длина ендов м</p>
+												<input type="text">
+											</div>
+											<span class="reset-param">Сбросить параметры</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="step-container">
+							<div class="title"><span>Шаг 2</span>. Выберите производителя гибкой черепицы, модель и цвет</div>
+							<div class="producer-carousel">
+								<h2 class="main-h2">Производители</h2>
+								<div class="tovar-item-car">
+									<div class="carousel-item-tovar"> 
+								      <div class="carousel-button-left2"><a href="#"><img src="images/tovar-prev.png" alt="" height="68" width="20"></a></div> 
+								      <div class="carousel-button-right2"><a href="#"><img src="images/tovar-next.png" alt="" height="68" width="20"></a></div> 
+										<div class="car-t-wrapper"> 
+										   <div class="car-t-items">       
+										   <div class="tovar-item-block car-t-block">
+												<div class="tovar-item-container">
+													<div class="producer">
+														<div class="block-vertical">
+															<img src="images/katepal-logo.png" height="26" width="99" alt="">
+														</div>
+													</div>
+												</div>
+											  </div>
+											  <div class="tovar-item-block car-t-block">
+													<div class="tovar-item-container">
+														<div class="producer">
+															<div class="block-vertical">
+																<img src="images/katepal-logo.png" height="26" width="99" alt="">
+															</div>
+														</div>
+													</div>
+											  </div>
+											  <div class="tovar-item-block car-t-block">
+													<div class="tovar-item-container">
+														<div class="producer">
+															<div class="block-vertical">
+																<img src="images/katepal-logo.png" height="26" width="99" alt="">
+															</div>
+														</div>
+													</div>
+											  </div>
+											  <div class="tovar-item-block car-t-block">
+													<div class="tovar-item-container">
+														<div class="producer">
+															<div class="block-vertical">
+																<img src="images/katepal-logo.png" height="26" width="99" alt="">
+															</div>
+														</div>
+													</div>
+											  </div>
+											  <div class="tovar-item-block car-t-block">
+													<div class="tovar-item-container">
+														<div class="producer">
+															<div class="block-vertical">
+																<img src="images/katepal-logo.png" height="26" width="99" alt="">
+															</div>
+														</div>
+													</div>
+											  </div>
+											  <div class="tovar-item-block car-t-block">
+													<div class="tovar-item-container">
+														<div class="producer">
+															<div class="block-vertical">
+																<img src="images/katepal-logo.png" height="26" width="99" alt="">
+															</div>
+														</div>
+													</div>
+											  </div>
+											  <div class="tovar-item-block car-t-block">
+													<div class="tovar-item-container">
+														<div class="producer">
+															<div class="block-vertical">
+																<img src="images/katepal-logo.png" height="26" width="99" alt="">
+															</div>
+														</div>
+													</div>
+											  </div>
+											</div>
+										</div>
+								   </div>
+								</div>
+							</div>
+
+
+							<div class="models-carousel">
+								<h2 class="main-h2">Модели производители</h2>
+								<div class="tovar-item-car">
+									<div class="carousel-item-tovar"> 
+								      <div class="carousel-button-left2"><a href="#"><img src="images/tovar-prev.png" alt="" height="68" width="20"></a></div> 
+								      <div class="carousel-button-right2"><a href="#"><img src="images/tovar-next.png" alt="" height="68" width="20"></a></div> 
+										<div class="car-t-wrapper"> 
+										   <div class="car-t-items">       
+										   <div class="tovar-item-block car-t-block">
+													<div class="tovar-item-container">
+														<div class="item-img">
+															<div class="flag">
+																<span>от</span> 205
+															</div>
+															<div class="item-cell">
+																<img src="images/deke-item.png" alt="">
+															</div>
+														</div>
+														<div class="item-title">Аляска</div>
+														<div class="item-star">
+															<a href="#">
+																<img src="images/star.png" alt="" height="18" width="111">
+																
+															</a>
+														</div>
+													</div>
+											  </div><div class="tovar-item-block car-t-block">
+													<div class="tovar-item-container">
+														<div class="item-img">
+															<div class="flag">
+																<span>от</span> 205
+															</div>
+															<div class="item-cell">
+																<img src="images/deke-item.png" alt="">
+															</div>
+														</div>
+														<div class="item-title">Аляска</div>
+														<div class="item-star">
+															<a href="#">
+																<img src="images/star.png" alt="" height="18" width="111">
+																
+															</a>
+														</div>
+													</div>
+											  </div><div class="tovar-item-block car-t-block">
+													<div class="tovar-item-container">
+														<div class="item-img">
+															<div class="flag">
+																<span>от</span> 205
+															</div>
+															<div class="item-cell">
+																<img src="images/deke-item.png" alt="">
+															</div>
+														</div>
+														<div class="item-title">Аляска</div>
+														<div class="item-star">
+															<a href="#">
+																<img src="images/star.png" alt="" height="18" width="111">
+																
+															</a>
+														</div>
+													</div>
+											  </div><div class="tovar-item-block car-t-block">
+													<div class="tovar-item-container">
+														<div class="item-img">
+															<div class="flag">
+																<span>от</span> 205
+															</div>
+															<div class="item-cell">
+																<img src="images/deke-item.png" alt="">
+															</div>
+														</div>
+														<div class="item-title">Аляска</div>
+														<div class="item-star">
+															<a href="#">
+																<img src="images/star.png" alt="" height="18" width="111">
+																
+															</a>
+														</div>
+													</div>
+											  </div><div class="tovar-item-block car-t-block">
+													<div class="tovar-item-container">
+
+														<div class="item-img">
+															<div class="flag">
+																<span>от</span> 205
+															</div>
+															<div class="item-cell">
+																<img src="images/deke-item.png" alt="">
+															</div>
+														</div>
+														<div class="item-title">Аляска</div>
+														<div class="item-star">
+															<a href="#">
+																<img src="images/star.png" alt="" height="18" width="111">
+																
+															</a>
+														</div>
+													</div>
+											  </div><div class="tovar-item-block car-t-block">
+													<div class="tovar-item-container">
+														<div class="item-img">
+															<div class="flag">
+																<span>от</span> 205
+															</div>
+															<div class="item-cell">
+																<img src="images/deke-item.png" alt="" height="153" width="148">
+															</div>
+														</div>
+														<div class="item-title">Аляска</div>
+														<div class="item-star">
+															<a href="#">
+																<img src="images/star.png" alt="" height="18" width="111">
+																
+															</a>
+														</div>
+													</div>
+											  </div><div class="tovar-item-block car-t-block">
+													<div class="tovar-item-container">
+														<div class="item-img">
+															<div class="flag">
+																<span>от</span> 205
+															</div>
+															<div class="item-cell">
+																<img src="images/deke-item.png" alt="">
+															</div>
+														</div>
+														<div class="item-title">Аляска</div>
+														<div class="item-star">
+															<a href="#">
+																<img src="images/star.png" alt="" height="18" width="111">
+																
+															</a>
+														</div>
+													</div>
+											  </div></div>
+										</div>
+								   </div>
+								</div>
+							</div>
+
+							<div class="models-carousel pallete-car">
+								<h2 class="main-h2">Цветовая палитра выбранной модели</h2>
+								<div class="tovar-item-car">
+									<div class="carousel-item-tovar"> 
+								      <div class="carousel-button-left2"><a href="#"><img src="images/tovar-prev.png" alt="" height="68" width="20"></a></div> 
+								      <div class="carousel-button-right2"><a href="#"><img src="images/tovar-next.png" alt="" height="68" width="20"></a></div> 
+										<div class="car-t-wrapper"> 
+										   <div class="car-t-items">       
+										   <div class="tovar-item-block car-t-block">
+													<div class="tovar-item-container">
+														<div class="item-img">
+															<div class="item-cell">
+																<img src="images/alaska.png" height="119" width="148" alt="">
+															</div>
+														</div>
+														<div class="item-title">Аляска</div>
+														<div class="palette">Терракота</div>
+													</div>
+											  </div>
+											  	  <div class="tovar-item-block car-t-block">
+													<div class="tovar-item-container">
+														<div class="item-img">
+															<div class="item-cell">
+																<img src="images/alaska.png" height="119" width="148" alt="">
+															</div>
+														</div>
+														<div class="item-title">Аляска</div>
+														<div class="palette">Терракота</div>
+													</div>
+											  </div>
+											     <div class="tovar-item-block car-t-block">
+													<div class="tovar-item-container">
+														<div class="item-img">
+															<div class="item-cell">
+																<img src="images/alaska.png" height="119" width="148" alt="">
+															</div>
+														</div>
+														<div class="item-title">Аляска</div>
+														<div class="palette">Терракота</div>
+													</div>
+											  </div>
+											     <div class="tovar-item-block car-t-block">
+													<div class="tovar-item-container">
+														<div class="item-img">
+															<div class="item-cell">
+																<img src="images/alaska.png" height="119" width="148" alt="">
+															</div>
+														</div>
+														<div class="item-title">Аляска</div>
+														<div class="palette">Терракота</div>
+													</div>
+											  </div>
+											     <div class="tovar-item-block car-t-block">
+													<div class="tovar-item-container">
+														<div class="item-img">
+															<div class="item-cell">
+																<img src="images/alaska.png" height="119" width="148" alt="">
+															</div>
+														</div>
+														<div class="item-title">Аляска</div>
+														<div class="palette">Терракота</div>
+													</div>
+											  </div>
+											    <div class="tovar-item-block car-t-block">
+													<div class="tovar-item-container">
+														<div class="item-img">
+															<div class="item-cell">
+																<img src="images/alaska.png" height="119" width="148" alt="">
+															</div>
+														</div>
+														<div class="item-title">Аляска</div>
+														<div class="palette">Терракота</div>
+													</div>
+											  </div>
+											     <div class="tovar-item-block car-t-block">
+													<div class="tovar-item-container">
+														<div class="item-img">
+															<div class="item-cell">
+																<img src="images/alaska.png" height="119" width="148" alt="">
+															</div>
+														</div>
+														<div class="item-title">Аляска</div>
+														<div class="palette">Терракота</div>
+													</div>
+											  </div>
+											</div>
+										</div>
+								   </div>
+								</div>
+							</div>
+						</div>
+
+						<div class="step-container">
+							<div class="title"><span>Шаг 3</span>. Будете ли вы утеплять крышу?</div>
+						</div>
+					</div>
+				</article>
 			</div>
 		</div>
 	</div>
