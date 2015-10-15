@@ -391,6 +391,30 @@ table {
 
 .example-table{
   margin-bottom: 25px;
+  .top-vertical{
+    vertical-align: top;
+    display: table-cell;
+    padding-top: 15px;
+  }
+  .info-name{
+    padding-left: 15px;
+    font-size: @font-size-base;
+
+      a{
+        color: @text-color;
+        text-decoration: none !important;
+        border-bottom: 1px solid @text-color;
+
+          &.sale-link{
+            font-weight: bold;
+            border-bottom: 1px dashed @text-color;
+          }
+      }
+      p{
+        color: #727272;
+        margin-bottom: 0;
+      }
+  }
   table{
     width: 100%;
 
@@ -514,6 +538,13 @@ table {
         line-height: 1;
       }
     }
+    .back{
+        font-size: @font-size-base;
+        color: @text-color;
+        text-decoration: none !important;
+        border-bottom: 1px solid @text-color;
+        font-family: Verdana,sans-serif;
+      }
   }
 }
 .cost-table{
