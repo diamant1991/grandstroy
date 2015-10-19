@@ -13,7 +13,10 @@ header.header{
 	display: table-cell;
 	vertical-align: middle;
 }
-
+.bottom-vertical{
+	display: table-cell;
+	vertical-align: bottom;
+}
 .center-header{
 	padding-left: 57px;
 }
@@ -4457,4 +4460,135 @@ progress::-webkit-progress-value { background: #ed2024; }
 }
 .center-items{
 	margin-top: 35px;
+}
+.in-compare{
+	position: fixed;
+	width: 100%;
+	left: 0;
+	bottom: 5px;
+	z-index: 10;
+}
+.my-favorites{
+	width: 160px;
+	height: 75px;
+	float: left;
+	border: 1px solid #c0b5c0;
+	border-radius: @border-radius-middle;
+	background: rgba(255,255,255,0.85);
+
+		&.my-compare{
+			width: 180px;
+			margin-left: 15px;
+		}
+}
+.my-favorites-table{
+	width: 100%;
+	height: 73px;
+	display: table;
+	font-size: 11px;
+	color: @text-color;
+	padding-left: 10px;
+
+		.heart{
+			position: relative;
+		}
+		.number{
+			position: absolute;
+			z-index: 2;
+			width: 25px;
+			height: 25px;
+			border-radius: 50%;
+			font-size: @font-size-base;
+			color: #fff;
+			background-color: #ed2024;
+			text-align: center;
+			line-height: 23px;
+			top: 0;
+			right: 10px;
+		}
+		.block-vertical{
+			width: 75px;
+		}
+}
+.slide-item{
+	text-align: center;
+	margin: 20px 0;
+
+		img{
+			max-width: 100%;
+			height: auto;
+		}
+}
+.share-text{
+	padding-right: 20px;
+	color: @text-color;
+	font-size: @font-size-base;
+	text-align: justify;
+	line-height: 1.5;
+}
+.share-container{
+	margin-bottom: 20px;
+
+		h4{
+			margin-top: 0;
+			margin-bottom: 15px;
+		}
+}
+.big-flag{
+	width: 186px;
+	height: 106px;
+	background: url(../images/big-flag.png)no-repeat;
+	font-family: Arial,sans-serif;
+	font-size: 27px;
+	color: #fff;
+	font-style: italic;
+	text-align: center;
+
+		span{
+			font-family: Verdana,sans-serif;
+			font-size: 36px;
+			font-weight: bold;
+			font-style: normal;
+		}
+}
+.share-wrapper{
+	margin-top: 20px;
+
+		h2{
+			margin-bottom: 25px;
+		}
+}
+.sentence-container{
+	height: 159px;
+	background: url(../images/sentence.png)no-repeat;
+	background-size: cover;
+	padding-right: 15px;
+	margin-top: 20px;
+
+		.square{
+			color: #ed2024;
+			font-size: 30px;
+			font-family: 'CenturyGothicRegulat';
+		}
+		.s-sub{
+			width: 100%;
+			line-height: 58px;
+			margin: 0;
+		}
+		.big-flag{
+			display: inline-block;
+		}
+		.table-block{
+			display: table;
+			height: 159px;
+			width: 100%;
+		}
+		h2{
+			margin-bottom: 0;
+		}
+		.flag-block{
+			position: relative;
+			top: 52px;
+			padding-left: 10px;
+		}
 }
