@@ -20,6 +20,8 @@
 .dropup,
 .dropdown {
   position: relative;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 // Prevent the focus on the dropdown toggle when closing dropdowns
@@ -37,17 +39,12 @@
   float: left;
   min-width: 160px;
   padding: 5px 0;
-  margin: 2px 0 0; // override default ul
   list-style: none;
   font-size: @font-size-base;
   text-align: left; // Ensures proper alignment if parent has it changed (e.g., modal footer)
   background-color: @dropdown-bg;
-  border: 1px solid @dropdown-fallback-border; // IE8 fallback
-  border: 1px solid @dropdown-border;
-  border-radius: @border-radius-base;
-  .box-shadow(0 6px 12px rgba(0,0,0,.175));
   background-clip: padding-box;
-
+  box-shadow:1px 1px 5px 0px rgba(170, 159, 174, 0.6);
   // Aligns the dropdown menu to right
   //
   // Deprecated as of 3.1.0 in favor of `.dropdown-menu-[dir]`
@@ -64,12 +61,22 @@
   // Links within the dropdown menu
   > li > a {
     display: block;
-    padding: 3px 20px;
     clear: both;
     font-weight: normal;
     line-height: @line-height-base;
-    color: @dropdown-link-color;
-    white-space: nowrap; // prevent links from randomly breaking onto new lines
+    color: @text-color;
+    white-space: nowrap;
+    border-bottom: 1px solid #a1a1a1;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  > li{
+    padding:0 20px; 
+    font-size: @font-size-base;
+      
+      &:last-child a{
+        border-bottom: 0;
+      }
   }
 }
 
@@ -79,7 +86,6 @@
   &:focus {
     text-decoration: none;
     color: @dropdown-link-hover-color;
-    background-color: @dropdown-link-hover-bg;
   }
 }
 
@@ -122,6 +128,10 @@
   // Show the menu
   > .dropdown-menu {
     display: block;
+  }
+  .drop-btn{
+    box-shadow:1px 1px 5px 0px rgba(170, 159, 174, 0.6);
+    border-bottom: 3px solid @nav-active;
   }
 
   // Remove the outline when :focus is triggered
@@ -212,5 +222,59 @@
     .dropdown-menu-left {
       .dropdown-menu-left();
     }
+  }
+}
+
+.center-header{
+}
+.drop-btn{
+  border: 0;
+  outline:0;
+  background-color: #fff;
+  display: inline-block;
+  padding-left: 20px;
+  padding-right: 20px;
+  vertical-align: middle;
+  height: 55px;
+  left: 0;
+  font-size: @font-size-base;
+  color: @text-color;
+  border-radius: @border-radius-middle @border-radius-middle 0 0;
+  margin: 0;
+  border-bottom: 3px solid transparent;
+}
+.dropdown-container{
+  text-align: center;
+  padding-bottom: 5px;
+
+    &.second{
+      text-align: left;
+    }
+    .drop-btn{
+      padding-left: 0;
+    }
+
+    .initials{
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    border: 2px solid @nav-active;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 26px;
+    background: #e9e9e9;
+    font-size: @font-size-base;
+    color: @text-color;
+    margin-right: 15px;
+  }
+  .dropdown-menu{
+    width: 100%;
+    border-radius: 0 0 @border-radius-middle @border-radius-middle;
+  }
+  .my_caret{
+    margin-left: 6px;
+  }
+  .name{
+    font-weight: bold;
   }
 }

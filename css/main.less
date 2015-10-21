@@ -1396,7 +1396,11 @@ header.header{
 	margin-bottom: 35px;
 	-webkit-box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.18);
 	-moz-box-shadow:    0px 0px 18px 0px rgba(0, 0, 0, 0.18);
-	box-shadow:         0px 0px 18px 0px rgba(0, 0, 0, 0.18);	
+	box-shadow:         0px 0px 18px 0px rgba(0, 0, 0, 0.18);
+
+		&.top{
+			margin-top: 45px;
+		}	
 }
 
 .review{
@@ -2288,6 +2292,10 @@ header.header{
 	margin-top: 85px;
 	padding-bottom: 20px;
 	background-color: #f3f3f3;
+
+		&.second{
+			padding-bottom: 0;
+		}
 }
 .product-list{
 	list-style: disc;
@@ -3255,6 +3263,10 @@ progress::-webkit-progress-value { background: #ed2024; }
 	background-color: #fff;
 	border-radius: @border-radius-middle;
 	padding: 30px 15px 15px 30px;
+
+		&.second{
+			margin-bottom: 30px;
+		}
 }
 .small-video-slider{
 	.bx-item-container{
@@ -3394,6 +3406,10 @@ progress::-webkit-progress-value { background: #ed2024; }
 
 		.more-text-block{
 			padding: 0 100px;
+		}
+		&.white{
+			background-color: #fff;
+			padding-bottom: 30px;
 		}
 }
 .icons-fixed{
@@ -4590,5 +4606,61 @@ progress::-webkit-progress-value { background: #ed2024; }
 			position: relative;
 			top: 52px;
 			padding-left: 10px;
+		}
+}
+.basket-link{
+	margin: 20px 0;
+
+		a{
+			margin: 0;
+			display: block;
+			float: right;
+			line-height: 58px;
+		}
+}
+.fav-wrapper{
+	padding-bottom: 60px;
+	padding-top: 20px;
+
+		h6{
+			font-size: @font-size-base;
+			color: @nav-active;
+			margin-bottom: 20px;
+		}
+}
+.top-header{
+	box-shadow:0px 0px 18px 0px rgba(0, 0, 0, 0.18);
+
+		.col-xs-3{
+			width: 20%;
+		}
+		.input-search{
+			padding-top: 10px;
+		}
+		.center-link{
+			padding-top: 8px;
+
+				a{
+					position: relative;
+				}
+
+				.globus{
+					margin-right: 45px;
+					margin-left: 15px;
+				}
+		}
+		.number{
+			display: block;
+			position: absolute;
+			width: 25px;
+			top: -10px;
+			right: -10px;
+			height: 25px;
+			text-align: center;
+			line-height: 23px;
+			border-radius: 50%;
+			background-color: #ed2024;
+			color: #fff;
+			font-size: @font-size-base;
 		}
 }
