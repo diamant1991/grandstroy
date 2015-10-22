@@ -217,8 +217,8 @@
 									Доставка по звонку <br> Недоступно
 								</div>
 								<div class="compare">
-									<input type="checkbox">
-									<label>Сравнить</label>
+									<input type="checkbox" class="checkbox" id="check1">
+									<label for="check1">Сравнить</label>
 								</div>
 							</div>
 						</div>
@@ -234,17 +234,17 @@
 		<div class="row">
 			<div class="tabs-container">
 				  <ul class="nav nav-tabs" role="tablist">
-				      <li role="presentation"><a href="#description" aria-controls="home" role="tab" data-toggle="tab">Описание</a></li>
+				      <li role="presentation" class="active"><a href="#description" aria-controls="home" role="tab" data-toggle="tab">Описание</a></li>
 				       <li role="presentation"><a href="#photo" aria-controls="profile" role="tab" data-toggle="tab">Фото</a></li>
 				       <li role="presentation"><a href="#review" aria-controls="messages" role="tab" data-toggle="tab">Отзывы</a></li>
 				       <li role="presentation"><a href="#accessories" aria-controls="settings" role="tab" data-toggle="tab">Аксессуары</a></li>
-				       <li role="presentation" class="active"><a href="#installation" aria-controls="settings" role="tab" data-toggle="tab">Монтаж</a></li>
+				       <li role="presentation"><a href="#installation" aria-controls="settings" role="tab" data-toggle="tab">Монтаж</a></li>
 				  </ul>
 			</div>
 		</div>
 	</div>
 	<div class="tab-content">
-	   <div role="tabpanel" class="tab-pane" id="description">
+	   <div role="tabpanel" class="tab-pane active" id="description">
 	   	<div class="container">
 	   		<div class="row">
 	   	<h2 class="main-h2">Описание</h2>
@@ -736,7 +736,23 @@
 	    </div>
 	   </div><!-- description -->
 
-	   <div role="tabpanel" class="tab-pane" id="photo">...</div>
+	   <div role="tabpanel" class="tab-pane" id="photo">
+	   	<div class="container">
+	   		<div class="row">
+	   			<header class="header-photo clearfix">
+	   				<h2 class="main-h2">Фото</h2>
+	   				<a href="#" class="all-photo">Все фото</a>
+	   			</header>
+	   			<div class="photo-container">
+	   				<img src="images/photo.jpg" height="161" width="211" alt="">
+	   				<img src="images/photo.jpg" height="161" width="211" alt="">
+	   				<img src="images/photo.jpg" height="161" width="211" alt="">
+	   				<img src="images/photo.jpg" height="161" width="211" alt="">
+	   				<img src="images/photo.jpg" height="161" width="211" alt="">
+	   			</div>
+	   		</div>
+	   	</div>
+	   </div>
 
 	   <div role="tabpanel" class="tab-pane" id="review">
 	   	<div class="container">
@@ -1561,7 +1577,7 @@
 	   	</div>
 	   </div><!-- accessories-->
 
-	   <div role="tabpanel" class="tab-pane active" id="installation">
+	   <div role="tabpanel" class="tab-pane" id="installation">
 			<div class="container">
 			<div class="row">
 	   	<h2 class="main-h2">Монтаж</h2>

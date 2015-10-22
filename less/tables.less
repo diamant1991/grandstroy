@@ -782,3 +782,89 @@ table {
       }
   }
 }
+.product-table{
+  table{
+    width: 100%;
+
+      td{
+        vertical-align: middle;
+
+          &:first-child{
+            width: 135px;
+            text-align: center;
+          }
+          &:nth-child(2){
+            width: 120px;
+          }
+          &:nth-child(3){
+            width: 700px;
+          }
+      }
+  }
+  .name{
+    color: @text-color-second;
+    font-size: 15px;
+    font-family: 'centurygothicbold';
+  }
+  .col{
+    font-size: 24px;
+    color: @text-color;
+
+      span{
+        font-size: 36px;
+      }
+  }
+  .item-info{
+    text-align: center;
+    width: 145px;
+  }
+}
+
+.view-list{
+  padding-bottom: 25px;
+
+  table{
+    width: 100%;
+
+    td{
+      vertical-align: middle;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #c0c0c0;
+      color: @text-color;
+
+      &:first-child{
+        width: 65px;
+      }
+      &:nth-child(2){
+        width: 330px;
+        font-size: 15px;
+        line-height: 1.2;
+      }
+      &:nth-child(3){
+        width: 230px;
+      }
+      &:nth-child(4){
+        width: 60px;
+      }
+      &:nth-child(5){
+        width: 160px;
+      }
+      &:last-child{
+        text-align: right;
+      }
+    }
+    .price-list{
+      font-size: @font-size-base;
+
+        span{
+          &:first-child{
+            font-size: 16px;
+          }
+          &:nth-child(2){
+            font-size: 24px;
+          }
+        }
+    }
+  }
+}
