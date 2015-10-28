@@ -437,17 +437,25 @@
       &:hover,
       &:focus {
         color: @nav-active;
-        border-bottom-width: 4px;
-        border-bottom-color: @nav-active;
+
+        span{
+          border-bottom-width: 4px;
+          border-bottom-color: @nav-active;
+        }
+        
       }
     }
     > .active > a {
       &,
       &:hover,
       &:focus {
+
+        span{
+          border-bottom-width: 4px;
+          border-bottom-color: @nav-active;
+        }
         color: @nav-active;
-        border-bottom-width: 4px;
-        border-bottom-color: @nav-active;
+        
       }
     }
     > .disabled > a {
@@ -688,7 +696,7 @@
     padding-bottom: 5px;
     padding-left: 0;
     padding-right: 0;
-    border-bottom: 1px solid @nav-text;
+    height: 64px;
     background-color: transparent !important;
    }
 }
