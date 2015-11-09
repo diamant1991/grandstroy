@@ -561,6 +561,9 @@ header.header{
 	background: linear-gradient(to bottom,  #654d6f 0%,#5e4866 31%,#514157 68%,#4a3c4e 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#654d6f', endColorstr='#4a3c4e',GradientType=0 ); /* IE6-9 */
 		
+		&.mrg{
+			margin-top: 20px;
+		}
 		&.make-install{
 			padding-bottom: 40px;
 			.container{
@@ -741,6 +744,10 @@ header.header{
 .wiki{
 	margin-top: 68px;
 	margin-bottom: 40px;
+
+		&.wiki{
+			margin-top: 55px;
+		}
 
 		&.border{
 			border-top: 10px solid @nav-active;
@@ -1840,6 +1847,9 @@ header.header{
 		span{
 			font-size: @font-size-large;
 		}
+		&.mrg{
+			margin-bottom: 0;
+		}
 }
 .bx-item{
 	text-align: center;
@@ -1891,15 +1901,37 @@ header.header{
 
 	&.toggle{
 		height: 230px;
-		overflow: hidden;
+		position: relative;
 		-webkit-transition: height 0.3s ease-in-out;
 			 -moz-transition: height 0.3s ease-in-out;
 			      transition: height 0.3s ease-in-out;
 		.bx-title{
 			height: 50px;
 		}
+		.bottom-toogle{
+			position: absolute;
+			z-index: 2;
+			width: 101%;
+			left: -1px;
+			background-color: #fff;
+			padding-left: 5px;
+			padding-right: 5px;
+			display: none;
+			border: 1px solid #795885;
+			border-top: 0;
+			-webkit-border-radius: 0 0 @tooltip-arrow-width @tooltip-arrow-width;
+			-moz-border-radius: 0 0 @tooltip-arrow-width @tooltip-arrow-width;
+			border-radius: 0 0 @tooltip-arrow-width @tooltip-arrow-width;
+		}
 		&:hover{
-			height: 330px;
+			border-bottom: 0;
+			-webkit-border-radius: @tooltip-arrow-width @tooltip-arrow-width 0 0;
+			-moz-border-radius: @tooltip-arrow-width @tooltip-arrow-width 0 0;
+			border-radius: @tooltip-arrow-width @tooltip-arrow-width 0 0;
+
+			.bottom-toogle{
+				display: block;
+			}
 		}
 	}
 }
@@ -1910,6 +1942,7 @@ header.header{
 	font-family: 'centurygothicbold';
 	font-size: @modal-inner-padding;
 	color: @text-color-second;
+	line-height: 1.2;
 
 		span{
 			text-transform: uppercase;
@@ -2533,7 +2566,7 @@ header.header{
 
 .filter-link{
 	font-size: 14px;
-	padding-top: 30px;
+	padding-top: 25px;
 	a{
 		display: inline-block;
 		margin-right: 20px;
@@ -3925,6 +3958,12 @@ progress::-webkit-progress-value { background: #ed2024; }
 				margin-bottom: 7px;
 			}
 		}
+		li{
+			-webkit-user-select: none;
+		  -moz-user-select: none;
+		  -ms-user-select: none;
+		  user-select: none;
+		}
 }
 .checkbox {
   vertical-align: top;
@@ -4325,6 +4364,10 @@ progress::-webkit-progress-value { background: #ed2024; }
 	padding: 30px 0;
 	text-align: right;
 
+	&.pad{
+		padding-bottom: 0;
+	}
+
 		&.border{
 			border-top: 10px solid @nav-active;
 			margin-top: 35px;
@@ -4398,7 +4441,7 @@ progress::-webkit-progress-value { background: #ed2024; }
 	text-decoration: none !important;
 }
 .report-container{
-	margin-top: 25px;
+	margin-top: 30px;
 
 		.main-h2{
 			margin-bottom: 20px;
@@ -4615,6 +4658,9 @@ progress::-webkit-progress-value { background: #ed2024; }
 		img{
 			width: 100%;
 			height: auto;
+		}
+		&.mrg{
+			margin-bottom: 0;
 		}
 }
 .center-items{
@@ -5053,5 +5099,16 @@ progress::-webkit-progress-value { background: #ed2024; }
 		display: inline-block;
 		vertical-align: middle;
 		margin-right: 10px;
+	}
+}
+.bx-price-container{
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+
+@media(min-width: 1280px){
+	.in-compare-container{
+		margin-left: -70px;
 	}
 }
