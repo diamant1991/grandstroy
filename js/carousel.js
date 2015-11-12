@@ -10,6 +10,7 @@ $(document).on('click',".carousel-button-left",function(){
 	left_carusel(carusel);
 	return false;
 });
+
 function left_carusel(carusel){
    var block_width = $(carusel).find('.carousel-block').outerWidth();
    $(carusel).find(".carousel-items .carousel-block").eq(-1).clone().prependTo($(carusel).find(".carousel-items")); 
@@ -27,10 +28,6 @@ function right_carusel(carusel){
    }); 
 }
 
-
-
-
-
 $(document).on('click', ".carousel-button-right2",function(){ 
    var carusel2 = $(this).parents('.tovar-item-car');
    right_carusel2(carusel2);
@@ -42,6 +39,7 @@ $(document).on('click',".carousel-button-left2",function(){
    left_carusel2(carusel2);
    return false;
 });
+
 function left_carusel2(carusel2){
    var block_width2 = $(carusel2).find('.car-t-block').outerWidth();
    $(carusel2).find(".car-t-items .car-t-block").eq(-1).clone().prependTo($(carusel2).find(".car-t-items")); 
