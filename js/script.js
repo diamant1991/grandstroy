@@ -39,4 +39,15 @@ $(document).ready(function() {
        });
 
     });
+
+    $('.garanty-toogle').click(function() {
+      $(this).toggleClass('active');
+      var text = $('.garanty-toogle span').text();
+      $('.garanty-toogle span').text(
+        text == "Гарантия лучшей цены" ? "Нашли дешевле? Снизим цену!" : "Гарантия лучшей цены");
+    });
+
+    
+
+
 });

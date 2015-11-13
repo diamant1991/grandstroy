@@ -414,6 +414,13 @@
       bottom: -9px;
       background: url(../images/box-shadow.png);
    }
+   &.no-shadow{
+    margin-bottom: 0;
+
+    &:after{
+      content: none;
+    }
+   }
 
   .navbar-brand {
     color: @navbar-default-brand-color;
