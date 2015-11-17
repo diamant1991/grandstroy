@@ -1251,6 +1251,10 @@ header.header{
 	font-size: 38px;
 	color:#523e59;
 	text-transform: uppercase;
+
+	&.mrg{
+		margin-bottom: 0;
+	}
 }
 .call_banner{
 	height: 290px;
@@ -2769,7 +2773,7 @@ header.header{
 	margin-top: 35px;
 
 		&.sort-mrg{
-			margin-top: 0;
+			margin-top: 8px;
 		}
 		.pagination{
 			margin-top: 23px;
@@ -3600,6 +3604,8 @@ progress::-webkit-progress-value { background: #ed2024; }
 	}
 }
 .comparison-content{
+	width: 1185px;
+	height: 572px;
 	overflow: auto;
 	padding-left: 15px;
 	padding-right: 15px;
@@ -4216,7 +4222,7 @@ progress::-webkit-progress-value { background: #ed2024; }
   				color: @text-color;
 
   					&:before{
-  						content: '';
+  					content: '';
 						position: absolute;
 						top: 2px;
 						left: 0;
@@ -4436,6 +4442,23 @@ progress::-webkit-progress-value { background: #ed2024; }
 			.border-block{
 				height: 50px;
 			}
+			td{
+				&:nth-child(2){
+					text-align: left;
+				}
+				&:nth-child(3){
+					text-align: left;
+
+					.border-block{
+						padding-left: 35px;
+					}
+				}
+				&.nth-child(4){
+					.border-block{
+						padding-right: 10px;
+					}
+				}
+			}
 		}
 		tbody td{
 			&:first-child{
@@ -4443,12 +4466,14 @@ progress::-webkit-progress-value { background: #ed2024; }
 			}
 			&:nth-child(2){
 				width: 155px;
+				text-align: left;
 			}
 			&:nth-child(3){
-				width: 230px;
+				width: 190px;
+				text-align: left;
 			}
 			&:nth-child(4){
-				width: 145px;
+				width: 185px;
 			}
 		}
 	}
@@ -5066,6 +5091,8 @@ progress::-webkit-progress-value { background: #ed2024; }
 }
 .top-header{
 	box-shadow:0px 0px 18px 0px rgba(0, 0, 0, 0.18);
+	height: 80px;
+	padding-top: 15px !important;
 
 		.col-xs-3{
 			width: 20%;
@@ -5481,4 +5508,45 @@ progress::-webkit-progress-value { background: #ed2024; }
 			margin-right: 5px;
 		}
 	}
+}
+.delete-tovar{
+	display: block;
+	width: 16px;
+	height: 16px;
+	cursor: pointer;
+	background: url(../images/del-grey.png)no-repeat;
+	margin: auto;
+
+	&:hover{
+		background: url(../images/red-close.png)no-repeat;
+	}
+}
+.red-logo{
+	position: relative;
+	top: 30px;
+}
+.get-more{
+	float: right;
+	text-decoration: underline;
+	font-size: @font-size-base;
+	color: @text-color !important;
+}
+.large-arrow{
+	cursor: pointer;
+	display: inline-block;
+	margin-top: 22px;
+
+	&.right{
+		margin-left: 40px;
+	}
+}
+.comp-header{
+	text-align: center;
+	position: relative;
+}
+.arrow-table{
+	position: absolute;
+	z-index: 2;
+	width: 100%;
+	left: 0;
 }
