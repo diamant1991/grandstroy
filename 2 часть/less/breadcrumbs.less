@@ -1,0 +1,59 @@
+//
+// Breadcrumbs
+// --------------------------------------------------
+
+
+.breadcrumb {
+  padding: @breadcrumb-padding-vertical @breadcrumb-padding-horizontal;
+  padding-left: 0;
+  margin-bottom: @line-height-computed;
+  list-style: none;
+  font-family: Verdana,sans-serif;
+
+  > li {
+    display: inline-block;
+    font-size: 14px;
+
+      &:first-child{
+         position: relative;
+         padding-left: 40px;
+      }
+
+      &:first-child:before{
+         content: '';
+         display: block;
+         width: 31px;
+         height: 24px;
+         background: url(../images/logo-bread.png)no-repeat;
+         position: absolute;
+         left: 0;
+         top: -3px;
+      }
+         
+      > a{
+         color:@nav-active;
+         text-decoration: none !important;
+   
+            > span{
+               border-bottom: 1px solid @nav-active;
+            }
+      }
+
+    + li:before {
+      content: "→"; // Unicode space added since inline-block means non-collapsing white-space
+      padding: 0 5px;
+      color: #000;
+      font-size: 14px;
+      position: relative;
+      top: -1px;
+      right: 2px;
+    }
+  }
+
+  > .active {
+    color: @breadcrumb-active-color;
+  }
+  &.pad{
+    padding-top: 0;
+  }
+}

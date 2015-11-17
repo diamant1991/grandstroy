@@ -1,0 +1,38 @@
+@font-face {
+    font-family: 'centurygothicbold';
+    src: url('../fonts/centurygothicbold.eot');
+    src: url('../fonts/centurygothicbold.eot') format('embedded-opentype'),
+         url('../fonts/centurygothicbold.woff2') format('woff2'),
+         url('../fonts/centurygothicbold.woff') format('woff'),
+         url('../fonts/centurygothicbold.ttf') format('truetype'),
+         url('../fonts/centurygothicbold.svg#centurygothicbold') format('svg');
+}
+
+@font-face {
+    font-family: 'CenturyGothicRegulat';
+    src: url('../fonts/CenturyGothicRegulat.eot');
+    src: url('../fonts/CenturyGothicRegulat.eot') format('embedded-opentype'),
+         url('../fonts/CenturyGothicRegulat.woff2') format('woff2'),
+         url('../fonts/CenturyGothicRegulat.woff') format('woff'),
+         url('../fonts/CenturyGothicRegulat.ttf') format('truetype'),
+         url('../fonts/CenturyGothicRegulat.svg#CenturyGothicRegulat') format('svg');
+}
+@font-face {
+    font-family: 'MuseoSansBold';
+    src: url('../fonts/MuseoSansBold.eot');
+    src: url('../fonts/MuseoSansBold.eot') format('embedded-opentype'),
+         url('../fonts/MuseoSansBold.woff2') format('woff2'),
+         url('../fonts/MuseoSansBold.woff') format('woff'),
+         url('../fonts/MuseoSansBold.ttf') format('truetype'),
+         url('../fonts/MuseoSansBold.svg#MuseoSansBold') format('svg');
+}
+
+@font-face {
+    font-family: 'AGLettericaCondLRegular';
+    src: url('../fonts/AGLettericaCondLRegular.eot');
+    src: url('../fonts/AGLettericaCondLRegular.eot') format('embedded-opentype'),
+         url('../fonts/AGLettericaCondLRegular.woff2') format('woff2'),
+         url('../fonts/AGLettericaCondLRegular.woff') format('woff'),
+         url('../fonts/AGLettericaCondLRegular.ttf') format('truetype'),
+         url('../fonts/AGLettericaCondLRegular.svg#AGLettericaCondLRegular') format('svg');
+}
