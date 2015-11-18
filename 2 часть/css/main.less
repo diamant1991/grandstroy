@@ -575,8 +575,6 @@ header.header{
 	&.also-flag{
 		top: 6px;
 	}
-
-
 	    span{
 			font-family: Arial,sans-serif;
 			font-size: 12px;
@@ -814,6 +812,10 @@ header.header{
 
 		&.wiki{
 			margin-top: 55px;
+
+			&.mrg{
+				margin-top: 68px;
+			}
 		}
 
 		&.border{
@@ -1915,6 +1917,10 @@ header.header{
 .sliders-wrapper{
 	padding: 40px 0;
 
+	&.top-pad{
+		padding-top: 0;
+	}
+
 	&.pad{
 		padding-bottom: 15px;
 	}
@@ -2668,6 +2674,10 @@ header.header{
 
 		&.second{
 			padding-bottom: 0;
+		}
+		&.white{
+			background-color: #fff;
+			margin-top: 60px;
 		}
 }
 .product-list{
@@ -4901,6 +4911,9 @@ progress::-webkit-progress-value { background: #ed2024; }
 			max-width: 100%;
 			height: auto;
 		}
+		&.mrg{
+			margin-top: 35px;
+		}
 }
 .tegola{
 	.item-name{
@@ -5568,6 +5581,8 @@ progress::-webkit-progress-value { background: #ed2024; }
 	width: 100%;
 	left: 0;
 }
+
+//2 часть
 .tovar-section-carousel{
 	.title{
 		position: relative;
@@ -5584,5 +5599,209 @@ progress::-webkit-progress-value { background: #ed2024; }
 	}
 	.tovar-item-car{
 		margin-top: 15px;
+	}
+}
+.color-solutions{
+	margin-top: 35px;
+}
+.color-tab-content{
+  border: 1px solid #c0b5c0;
+  padding: 30px 20px;
+}
+.color-tag{
+	font-size: 15px;
+	font-family: 'centurygothicbold';
+	margin-left: -40px;
+	padding-left: 10px;
+
+	li{
+		float: left;
+		margin-left: 40px;
+	}
+
+	a{
+		color: @text-color-second;
+		text-decoration: none !important;
+		border-bottom: 1px solid @text-color-second;
+
+		&:hover,
+		&.active{
+			color: #ed2024;
+			border-bottom-color: #ed2024;
+		}
+	}
+}
+.solution-container{
+	margin-top: 20px;
+
+	.title{
+		padding-left: 10px;
+		margin-bottom: 20px;
+
+		.main-h2{
+			display: inline-block;
+			border-bottom: 2px solid @nav-active;
+			margin-right: 35px;
+			vertical-align: middle;
+		}
+	}
+}
+.flag-solution{
+	width: 112px;
+	height: 58px;
+	background: url(../images/middle-flag.png)no-repeat;
+	text-align: center;
+	color: #fff;
+	font-size: 24px;
+	font-weight: bold;
+	padding-right: 5px;
+	margin-bottom: 15px;
+
+	span{
+		font-family: Arial,sans-serif;
+		font-size: 18px;
+		font-style: italic;
+		position: relative;
+		top: -3px;
+		left: 3px;
+	}
+}
+.available-list{
+	font-size: 10.5px;
+	color: @text-color-second;
+	text-align: center;
+
+	.color-block{
+		width: 60px;
+		height: 30px;
+		margin-bottom: 5px;
+	}
+	ul{
+		margin-left: -10px;
+	}
+	li{
+		float: left;
+		margin-left: 10px;
+	}
+}
+.solution-right{
+	padding-left: 10px;
+}
+.other-profile{
+	margin-top: 40px;
+	padding-bottom: 15px;
+
+	.tovar-item-car .carousel-button-left2 a,
+	.tovar-item-car .carousel-button-right2 a{
+		top: 110px;
+	}
+}
+.profile-block{
+	width: 575px;
+	padding-right: 20px;
+}
+.profile-images{
+	height: 140px;
+}
+.profile-desc{
+	padding-top: 15px;
+	font-size: 14px;
+	color: @text-color-second;
+	border-top: 1px solid #c0b5c0;
+}
+.profile-item{
+	padding: 20px;
+
+	.main-h5{
+		text-align: left;
+		margin-bottom: 15px;
+		font-size: 15px;
+	}
+}
+.social-list{
+	float: right;
+	li{
+		float: left;
+		margin-left: 10px;
+	}
+}
+.text-section-block{
+	padding-left: 155px;
+}
+.text-section{
+	padding: 30px 0;
+	border-bottom: 10px solid @nav-active;
+
+	p{
+		margin-bottom: 40px;
+		padding-right: 155px;
+		line-height: 1.6;
+	}
+}
+.available-color-tegola{
+	padding-left: 155px;
+
+	.main-h4{
+		margin-bottom: 20px;
+	}
+	li{
+		text-align: center;
+		float: left;
+		margin-right: 25px;
+		font-size: 14px;
+		color: @text-color-second;
+
+		p{
+			margin-top: 3px;
+		}
+	}
+}
+.grey-content{
+	border-top: 1px solid #c0b5c0;
+	background-color: #fff;
+}
+.choise-header{
+	.main-h2{
+		display: inline-block;
+		vertical-align: middle;
+		position: relative;
+		top: 4px;
+	}
+	.choise{
+		display: inline-block;
+		vertical-align: middle;
+		font-size: 18px;
+		margin-left: 20px;
+
+		a{
+			display: inline-block;
+			cursor: pointer;
+			vertical-align: middle;
+			color: #99979a;
+			text-decoration: none !important;
+			border-bottom: 1px dashed #99979a;
+			font-family: 'CenturyGothicRegulat';
+			margin-right: 25px;
+			line-height: 1.2;
+
+			&.active{
+				font-family: 'centurygothicbold';
+				border-bottom: 2px solid @nav-active;
+				color: @nav-active;
+			}
+		}
+
+		span{
+			font-size: 30px;
+		}
+	}
+}
+.view-all-this{
+	text-align: right;
+
+	a{
+		color: @text-color;
+		border-bottom: 1px solid @text-color;
+		text-decoration: none !important;
 	}
 }
