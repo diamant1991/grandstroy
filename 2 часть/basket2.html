@@ -11,6 +11,7 @@
 	<meta name="keywords" content="" >
 	<meta name="description" content="">
 	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/jquery.jscrollpane.css">
 	<link rel="stylesheet/less" href="less/bootstrap.less">
 	<link rel="stylesheet/less" href="css/main.less">
 	<script src="js/modernizr-2.8.3.min.js"></script>
@@ -68,12 +69,114 @@
 								</div>
 								<div class="col-xs-3 center-link">
 									<div class="row">
-										<a href="#" class="globus">
+										<a href="#" class="globus mrg">
 											<img src="images/globus.png" height="31" width="33" alt="">
 										</a>
-										<a href="#" class="basket">
-											<img src="images/basket.png" height="30" width="39" alt="">
-										</a>
+										<div class="basket-header">
+											<div class="basket-header-container">
+												<span class="basket"></span>
+												<div class="basket-drop">
+													<div class="basket-drop-info">
+														<div class="white-block scroll-pane">
+															<div class="basket-drop-container clearfix">
+																<div class="basket-drop-img">
+																	<img src="images/img.png" alt="">
+																</div>
+																<div class="basket-drop-text">
+																	<a href="#">
+																		Ламинированная черепица Shinglas Джаз индиго
+																	</a>
+																</div>
+															</div>
+															<div class="basket-drop-container clearfix">
+																<div class="basket-drop-img">
+																	<img src="images/img.png" alt="">
+																</div>
+																<div class="basket-drop-text">
+																	<a href="#">
+																		Гибкая черепица CertainTeed LandMark Atlantic Blue
+																	</a>
+																</div>
+															</div>
+															<div class="basket-drop-container clearfix">
+																<div class="basket-drop-img">
+																	<img src="images/img.png" alt="">
+																</div>
+																<div class="basket-drop-text">
+																	<a href="#">
+																		Гибкая черепица Katepal Rocky Дюна
+																	</a>
+																</div>
+															</div>
+															<div class="basket-drop-container clearfix">
+																<div class="basket-drop-img">
+																	<img src="images/img.png" alt="">
+																</div>
+																<div class="basket-drop-text">
+																	<a href="#">
+																		Ламинированная черепица Shinglas Джаз индиго
+																	</a>
+																</div>
+															</div>
+															<div class="basket-drop-container clearfix">
+																<div class="basket-drop-img">
+																	<img src="images/img.png" alt="">
+																</div>
+																<div class="basket-drop-text">
+																	<a href="#">
+																		Ламинированная черепица Shinglas Джаз индиго
+																	</a>
+																</div>
+															</div>
+															<div class="basket-drop-container clearfix">
+																<div class="basket-drop-img">
+																	<img src="images/img.png" alt="">
+																</div>
+																<div class="basket-drop-text">
+																	<a href="#">
+																		Ламинированная черепица Shinglas Джаз индиго
+																	</a>
+																</div>
+															</div>
+															<div class="basket-drop-container clearfix">
+																<div class="basket-drop-img">
+																	<img src="images/img.png" alt="">
+																</div>
+																<div class="basket-drop-text">
+																	<a href="#">
+																		Ламинированная черепица Shinglas Джаз индиго
+																	</a>
+																</div>
+															</div>
+															<div class="basket-drop-container clearfix">
+																<div class="basket-drop-img">
+																	<img src="images/img.png" alt="">
+																</div>
+																<div class="basket-drop-text">
+																	<a href="#">
+																		Ламинированная черепица Shinglas Джаз индиго
+																	</a>
+																</div>
+															</div>
+
+														</div>
+														<div class="grey-block">
+															<div class="basket-salle clearfix">
+																<span>Скидка</span>
+																<span>25436</span>
+															</div>
+															<div class="total-price-basket clearfix">
+																<span>Итого к оплате</span>
+																<span>6 035.56</span>
+															</div>
+															<div class="header-basket-link">
+																<a href="#" class="btn btn-danger s-sub">Перейти в корзину</a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -127,11 +230,936 @@
 	</div>
 </div>
 
+<div class="product_card_wrapper">
+	<div class="container">
+		<div class="row">
+			<div class="total-container">
+				<div class="example-table">
+					<table>
+						<thead>
+							<tr>
+								<td>
+									<div class="border-block">
+										Название товара
+									</div>
+								</td>
+								<td>
+									<div class="border-block">
+										Цена
+										<span><img src="images/ques-block.png" alt="" height="16" width="16"></span>
+									</div>
+								</td>
+								<td>
+									<div class="border-block">
+										Кол-во
+									</div>
+								</td>
+								<td>
+									<div class="border-block">
+										Итого
+									</div>
+								</td>
+								<td>
+									<div class="border-block">
+
+									</div>
+								</td>
+							</tr>
+						</thead>
+						<tfoot>
+							<tr>
+								<td colspan="2">
+									<div class="border-block">
+										<a href="#" class="back">← Вернуться к выбору  товаров</a>
+									</div>
+								</td>
+								<td>
+									<div class="border-block">Итого по оплате:</div>
+								</td>
+								<td colspan="2">
+									<div class="border-block">88 605.00 <span>руб.</span></div>
+								</td>
+							</tr>
+						</tfoot>
+						<tbody>
+							<tr>
+								<td>
+									<div class="pad-block">
+										<div class="border-block">
+											<div class="table-block">
+												<div class="top-vertical">
+													<div class="block-vertical">
+														<img src="images/img.png" alt="" height="50" width="50">
+													</div>
+													<div class="block-vertical info-name">
+														<a href="#">Ламинированная черепица Shinglas Джаз индиго</a>
+														<p>Код товара: 073094</p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</td>
+								<td>
+									<div class="pad-block">
+										<div class="border-block">
+											<div class="table-block">
+												<div class="top-vertical">
+													534.60
+												</div>
+											</div>
+										</div>
+									</div>
+								</td>
+								<td>
+									<div class="pad-block">
+										<div class="border-block">
+											<div class="table-block">
+												<div class="top-vertical">
+													<div class="minus">
+														<img src="images/minus.png" alt="" height="30" width="30">
+													</div>
+													<input value="2" class="tot-input" type="text">
+													<div class="plus-tot">
+														<img src="images/plus.png" alt="" height="30" width="30">
+													</div>
+													<span>м <sup>2</sup></span>
+													<span class="red-ques"><sup>?</sup></span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</td>
+								<td>
+									<div class="pad-block">
+										<div class="border-block">
+											<div class="table-block">
+												<div class="top-vertical">
+													1 069.20
+												</div>
+											</div>
+										</div>
+									</div>
+								</td>
+								<td>
+									<div class="pad-block">
+										<div class="border-block">
+											<div class="table-block">
+												<div class="top-vertical">
+													<span class="delete-tovar"></span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="pad-block">
+										<div class="border-block">
+											<div class="table-block">
+												<div class="top-vertical">
+													<div class="block-vertical">
+														<img src="images/img.png" alt="" height="50" width="50">
+													</div>
+													<div class="block-vertical info-name">
+														<a href="#">Ламинированная черепица Shinglas Джаз индиго</a>
+														<p>Код товара: 073094</p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</td>
+								<td>
+									<div class="pad-block">
+										<div class="border-block">
+											<div class="table-block">
+												<div class="top-vertical">
+													534.60
+												</div>
+											</div>
+										</div>
+									</div>
+								</td>
+								<td>
+									<div class="pad-block">
+										<div class="border-block">
+											<div class="table-block">
+												<div class="top-vertical">
+													<div class="minus">
+														<img src="images/minus.png" alt="" height="30" width="30">
+													</div>
+													<input value="2" class="tot-input" type="text">
+													<div class="plus-tot">
+														<img src="images/plus.png" alt="" height="30" width="30">
+													</div>
+													<span>м <sup>2</sup></span>
+													<span><sup>?</sup></span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</td>
+								<td>
+									<div class="pad-block">
+										<div class="border-block">
+											<div class="table-block">
+												<div class="top-vertical">
+													1 069.20
+												</div>
+											</div>
+										</div>
+									</div>
+								</td>
+								<td>
+									<div class="pad-block">
+										<div class="border-block">
+											<div class="table-block">
+												<div class="top-vertical">
+													<span class="delete-tovar"></span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr class="sale-variant">
+								<td>
+									<div class="pad-block">
+										<div class="border-block">
+											<div class="table-block">
+												<div class="top-vertical">
+													<div class="block-vertical">
+														<img src="images/img.png" alt="" height="50" width="50">
+													</div>
+													<div class="block-vertical info-name">
+														<a href="#">Ламинированная черепица Shinglas Джаз индиго</a>
+														<p>Код товара: 073094</p>
+														<p>Данный товар участвует в акциях:</p>
+														<a href="#" class="sale-link">Распродажа гибкой черепицы Katepal</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</td>
+								<td>
+									<div class="pad-block">
+										<div class="border-block">
+											<div class="table-block">
+												<div class="top-vertical">
+													534.60
+												</div>
+											</div>
+										</div>
+									</div>
+								</td>
+								<td>
+									<div class="pad-block">
+										<div class="border-block">
+											<div class="table-block">
+												<div class="top-vertical">
+													<div class="minus">
+														<img src="images/minus.png" alt="" height="30" width="30">
+													</div>
+													<input value="2" class="tot-input" type="text">
+													<div class="plus-tot">
+														<img src="images/plus.png" alt="" height="30" width="30">
+													</div>
+													<span>м <sup>2</sup></span>
+													<span><sup>?</sup></span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</td>
+								<td>
+									<div class="pad-block">
+										<div class="border-block">
+											<div class="table-block">
+												<div class="top-vertical">
+													1 069.20
+												</div>
+											</div>
+										</div>
+									</div>
+								</td>
+								<td>
+									<div class="pad-block">
+										<div class="border-block">
+											<div class="table-block">
+												<div class="top-vertical">
+													<span class="delete-tovar"></span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="file-attach">
+					<div class="attach-documents clearfix">
+						<button class="btn-attach">Приложить документацию</button>
+					</div>
+					<div class="file_upload">
+		        <button type="button">Обзор...</button>
+		        <div>Файл не выбран</div>
+		        <input type="file">
+		   		 </div>
+		   		 <div class="file-text">
+		   		 	Приложить документацию для точного расчета
+		   		 </div>
+				</div>
+				<div class="clear"></div>
+				<div class="all-info">
+					<span>Узнать примерную стоимость <a href="#">доставки</a></span>
+					<span>Вес: 90,5446 кг.</span>
+					<span>Объем: 0,074873 м <sup>3</sup></span>  
+					<span>Длина груза: 0 м</span>        
+				</div>
+				<div class="get-order-container clearfix">
+					<div class="col-xs-7"></div>
+					<div class="col-xs-5">
+						<div class="row">
+							<div class="get-order-input">
+								<p>Город / Микрорайон / Деревня / Поселок</p>
+								<input type="text">
+							</div>
+							<div class="get-order-input clearfix">
+								<div class="col-xs-9">
+									<div class="row">
+										<p>Улица</p>
+										<input type="text">
+									</div>
+								</div>
+								<div class="col-xs-3">
+									<p>Дом</p>
+									<input type="text">
+								</div>
+							</div>
+							<div class="get-order-input clearfix">
+								<button class="btn calculate">Расчитать</button>
+							</div>
+							<div class="get-order-input text">
+								<span>Предварительная стоимость доставки:</span>
+								<span><img src="images/ques-block.png" alt="" height="16" width="16"></span>
+							</div>
+							<div class="get-order-submit">
+								<div class="add-check">
+									<ul>
+										<li>
+											<input id="check15" type="checkbox">
+											<label for="check15">Нужен кран-манипулятор</label>
+										</li>
+										<li>
+											<input id="check16" type="checkbox">
+											<label for="check16">Добавить доставку в заказ</label>
+										</li>
+									</ul>
+								</div>
+								<div class="get-order-input mrg clearfix">
+									<input class="btn count" value="Пересчитать" type="submit">
+									<input class="btn btn-danger s-sub" value="Оформить заказ" type="submit">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="carousel-wrapper mrg">
+	<div class="container">
+		<div class="row">
+			<div class="header">
+				<div class="big-title">
+					<h1 class="h1 mrg">Добавить к заказу</h1>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="product_card_wrapper">
+	<div class="container">
+		<div class="row">
+			<div class="main-content clearfix">
+				<aside class="col-xs-3 sidebar">
+					<div class="row">
+						<div class="second-menu add-basket-menu">
+							<header class="sidebar-header">
+								ТОП-аксессуары
+							</header>
+							<ul>
+								 <li><a href="#">Подкладочный ковер (10)</a></li>
+								 <li><a href="#">Коньково-карнизная<br> полоса (10)</a></li>
+								 <li><a href="#">Ендовый ковер (10)</a></li>
+								 <li><a href="#">Металлические <br>капельники (10)</a></li>
+								 <li><a href="#">Подкладочный ковер (10)</a></li>
+							</ul>
+						</div>
+					</div>
+				</aside>
+				<article class="center-container col-xs-9">
+					<div class="row">
+						<div class="center-items mrg">
+						<div class="view-content pad">
+						<div class="view-container tiles-var clearfix">
+			      	<div class="tovar-item-block car-t-block bx-item mrg tiles">
+							<div class="bx-item-container">
+				   			<div class="best-img">
+				   				<img src="images/best-slide.jpg" alt="" class="main-best-img" height="143" width="150">
+				   				<div class="new-icon">
+				   					<img src="images/new.jpg" alt="" height="15" width="34">
+				   				</div>
+				   			</div>
+				   			<div class="bx-title">
+				   				<div class="block-vertical"><span>Shinglas</span> Континент</div>
+				   			</div>
+				   			<div class="bx-logo">
+				   				<img src="images/shinglas.png" alt="" height="22" width="90">
+				   			</div>
+				   			<div class="item-star">
+									<a href="#">
+										<img src="images/star.png" alt="" height="18" width="111">
+										<span>(0)</span>
+									</a>
+								</div>
+								<div class="bx-price-container">
+									<div class="bx-price clearfix">
+										<div class="bx-number block-vertical">
+											<span>от</span> 205
+										</div>
+										<div class="bx-basket block-vertical">
+											<div class="baket-icon"></div>
+										</div>
+									</div>
+									<div class="compare-item">
+										<a href="#" class="add-in-basket">Добавить</a>
+									</div>
+								</div>
+				   		</div>
+					  	</div>
+					  	<div class="tovar-item-block car-t-block bx-item mrg tiles">
+							<div class="bx-item-container">
+				   			<div class="best-img">
+				   				<img src="images/best-slide.jpg" alt="" class="main-best-img" height="143" width="150">
+				   				<div class="new-icon">
+				   					<img src="images/new.jpg" alt="" height="15" width="34">
+				   				</div>
+				   			</div>
+				   			<div class="bx-title">
+				   				<div class="block-vertical"><span>Shinglas</span> Континент</div>
+				   			</div>
+				   			<div class="bx-logo">
+				   				<img src="images/shinglas.png" alt="" height="22" width="90">
+				   			</div>
+				   			<div class="item-star">
+									<a href="#">
+										<img src="images/star.png" alt="" height="18" width="111">
+										<span>(0)</span>
+									</a>
+								</div>
+								<div class="bx-price-container">
+									<div class="bx-price clearfix">
+										<div class="bx-number block-vertical">
+											<span>от</span> 205
+										</div>
+										<div class="bx-basket block-vertical">
+											<div class="baket-icon"></div>
+										</div>
+									</div>
+									<div class="compare-item">
+										<a href="#" class="add-in-basket">Добавить</a>
+									</div>
+								</div>
+				   		</div>
+					  	</div>
+					  	<div class="tovar-item-block car-t-block bx-item mrg tiles">
+							<div class="bx-item-container">
+				   			<div class="best-img">
+				   				<img src="images/best-slide.jpg" alt="" class="main-best-img" height="143" width="150">
+				   				<div class="new-icon">
+				   					<img src="images/new.jpg" alt="" height="15" width="34">
+				   				</div>
+				   			</div>
+				   			<div class="bx-title">
+				   				<div class="block-vertical"><span>Shinglas</span> Континент</div>
+				   			</div>
+				   			<div class="bx-logo">
+				   				<img src="images/shinglas.png" alt="" height="22" width="90">
+				   			</div>
+				   			<div class="item-star">
+									<a href="#">
+										<img src="images/star.png" alt="" height="18" width="111">
+										<span>(0)</span>
+									</a>
+								</div>
+								<div class="bx-price-container">
+									<div class="bx-price clearfix">
+										<div class="bx-number block-vertical">
+											<span>от</span> 205
+										</div>
+										<div class="bx-basket block-vertical">
+											<div class="baket-icon"></div>
+										</div>
+									</div>
+									<div class="compare-item">
+										<a href="#" class="add-in-basket">Добавить</a>
+									</div>
+								</div>
+				   		</div>
+					  	</div>
+					  	<div class="tovar-item-block car-t-block bx-item mrg tiles">
+							<div class="bx-item-container">
+				   			<div class="best-img">
+				   				<img src="images/best-slide.jpg" alt="" class="main-best-img" height="143" width="150">
+				   				<div class="new-icon">
+				   					<img src="images/new.jpg" alt="" height="15" width="34">
+				   				</div>
+				   			</div>
+				   			<div class="bx-title">
+				   				<div class="block-vertical"><span>Shinglas</span> Континент</div>
+				   			</div>
+				   			<div class="bx-logo">
+				   				<img src="images/shinglas.png" alt="" height="22" width="90">
+				   			</div>
+				   			<div class="item-star">
+									<a href="#">
+										<img src="images/star.png" alt="" height="18" width="111">
+										<span>(0)</span>
+									</a>
+								</div>
+								<div class="bx-price-container">
+									<div class="bx-price clearfix">
+										<div class="bx-number block-vertical">
+											<span>от</span> 205
+										</div>
+										<div class="bx-basket block-vertical">
+											<div class="baket-icon"></div>
+										</div>
+									</div>
+									<div class="compare-item">
+										<a href="#" class="add-in-basket">Добавить</a>
+									</div>
+								</div>
+				   		</div>
+					  	</div>
+					  	<div class="tovar-item-block car-t-block bx-item mrg tiles">
+							<div class="bx-item-container">
+				   			<div class="best-img">
+				   				<img src="images/best-slide.jpg" alt="" class="main-best-img" height="143" width="150">
+				   				<div class="new-icon">
+				   					<img src="images/new.jpg" alt="" height="15" width="34">
+				   				</div>
+				   			</div>
+				   			<div class="bx-title">
+				   				<div class="block-vertical"><span>Shinglas</span> Континент</div>
+				   			</div>
+				   			<div class="bx-logo">
+				   				<img src="images/shinglas.png" alt="" height="22" width="90">
+				   			</div>
+				   			<div class="item-star">
+									<a href="#">
+										<img src="images/star.png" alt="" height="18" width="111">
+										<span>(0)</span>
+									</a>
+								</div>
+								<div class="bx-price-container">
+									<div class="bx-price clearfix">
+										<div class="bx-number block-vertical">
+											<span>от</span> 205
+										</div>
+										<div class="bx-basket block-vertical">
+											<div class="baket-icon"></div>
+										</div>
+									</div>
+									<div class="compare-item">
+										<a href="#" class="add-in-basket">Добавить</a>
+									</div>
+								</div>
+				   		</div>
+					  	</div>
+					  	<div class="tovar-item-block car-t-block bx-item mrg tiles">
+							<div class="bx-item-container">
+				   			<div class="best-img">
+				   				<img src="images/best-slide.jpg" alt="" class="main-best-img" height="143" width="150">
+				   				<div class="new-icon">
+				   					<img src="images/new.jpg" alt="" height="15" width="34">
+				   				</div>
+				   			</div>
+				   			<div class="bx-title">
+				   				<div class="block-vertical"><span>Shinglas</span> Континент</div>
+				   			</div>
+				   			<div class="bx-logo">
+				   				<img src="images/shinglas.png" alt="" height="22" width="90">
+				   			</div>
+				   			<div class="item-star">
+									<a href="#">
+										<img src="images/star.png" alt="" height="18" width="111">
+										<span>(0)</span>
+									</a>
+								</div>
+								<div class="bx-price-container">
+									<div class="bx-price clearfix">
+										<div class="bx-number block-vertical">
+											<span>от</span> 205
+										</div>
+										<div class="bx-basket block-vertical">
+											<div class="baket-icon"></div>
+										</div>
+									</div>
+									<div class="compare-item">
+										<a href="#" class="add-in-basket">Добавить</a>
+									</div>
+								</div>
+				   		</div>
+					  	</div>
+					  	<div class="tovar-item-block car-t-block bx-item mrg tiles">
+							<div class="bx-item-container">
+				   			<div class="best-img">
+				   				<img src="images/best-slide.jpg" alt="" class="main-best-img" height="143" width="150">
+				   				<div class="new-icon">
+				   					<img src="images/new.jpg" alt="" height="15" width="34">
+				   				</div>
+				   			</div>
+				   			<div class="bx-title">
+				   				<div class="block-vertical"><span>Shinglas</span> Континент</div>
+				   			</div>
+				   			<div class="bx-logo">
+				   				<img src="images/shinglas.png" alt="" height="22" width="90">
+				   			</div>
+				   			<div class="item-star">
+									<a href="#">
+										<img src="images/star.png" alt="" height="18" width="111">
+										<span>(0)</span>
+									</a>
+								</div>
+								<div class="bx-price-container">
+									<div class="bx-price clearfix">
+										<div class="bx-number block-vertical">
+											<span>от</span> 205
+										</div>
+										<div class="bx-basket block-vertical">
+											<div class="baket-icon"></div>
+										</div>
+									</div>
+									<div class="compare-item">
+										<a href="#" class="add-in-basket">Добавить</a>
+									</div>
+								</div>
+				   		</div>
+					  	</div>
+					  	<div class="tovar-item-block car-t-block bx-item mrg tiles">
+							<div class="bx-item-container">
+				   			<div class="best-img">
+				   				<img src="images/best-slide.jpg" alt="" class="main-best-img" height="143" width="150">
+				   				<div class="new-icon">
+				   					<img src="images/new.jpg" alt="" height="15" width="34">
+				   				</div>
+				   			</div>
+				   			<div class="bx-title">
+				   				<div class="block-vertical"><span>Shinglas</span> Континент</div>
+				   			</div>
+				   			<div class="bx-logo">
+				   				<img src="images/shinglas.png" alt="" height="22" width="90">
+				   			</div>
+				   			<div class="item-star">
+									<a href="#">
+										<img src="images/star.png" alt="" height="18" width="111">
+										<span>(0)</span>
+									</a>
+								</div>
+								<div class="bx-price-container">
+									<div class="bx-price clearfix">
+										<div class="bx-number block-vertical">
+											<span>от</span> 205
+										</div>
+										<div class="bx-basket block-vertical">
+											<div class="baket-icon"></div>
+										</div>
+									</div>
+									<div class="compare-item">
+										<a href="#" class="add-in-basket">Добавить</a>
+									</div>
+								</div>
+				   		</div>
+					  	</div>
+					  	<div class="tovar-item-block car-t-block bx-item mrg tiles">
+							<div class="bx-item-container">
+				   			<div class="best-img">
+				   				<img src="images/best-slide.jpg" alt="" class="main-best-img" height="143" width="150">
+				   				<div class="new-icon">
+				   					<img src="images/new.jpg" alt="" height="15" width="34">
+				   				</div>
+				   			</div>
+				   			<div class="bx-title">
+				   				<div class="block-vertical"><span>Shinglas</span> Континент</div>
+				   			</div>
+				   			<div class="bx-logo">
+				   				<img src="images/shinglas.png" alt="" height="22" width="90">
+				   			</div>
+				   			<div class="item-star">
+									<a href="#">
+										<img src="images/star.png" alt="" height="18" width="111">
+										<span>(0)</span>
+									</a>
+								</div>
+								<div class="bx-price-container">
+									<div class="bx-price clearfix">
+										<div class="bx-number block-vertical">
+											<span>от</span> 205
+										</div>
+										<div class="bx-basket block-vertical">
+											<div class="baket-icon"></div>
+										</div>
+									</div>
+									<div class="compare-item">
+										<a href="#" class="add-in-basket">Добавить</a>
+									</div>
+								</div>
+				   		</div>
+					  	</div>
+					  	<div class="tovar-item-block car-t-block bx-item mrg tiles">
+							<div class="bx-item-container">
+				   			<div class="best-img">
+				   				<img src="images/best-slide.jpg" alt="" class="main-best-img" height="143" width="150">
+				   				<div class="new-icon">
+				   					<img src="images/new.jpg" alt="" height="15" width="34">
+				   				</div>
+				   			</div>
+				   			<div class="bx-title">
+				   				<div class="block-vertical"><span>Shinglas</span> Континент</div>
+				   			</div>
+				   			<div class="bx-logo">
+				   				<img src="images/shinglas.png" alt="" height="22" width="90">
+				   			</div>
+				   			<div class="item-star">
+									<a href="#">
+										<img src="images/star.png" alt="" height="18" width="111">
+										<span>(0)</span>
+									</a>
+								</div>
+								<div class="bx-price-container">
+									<div class="bx-price clearfix">
+										<div class="bx-number block-vertical">
+											<span>от</span> 205
+										</div>
+										<div class="bx-basket block-vertical">
+											<div class="baket-icon"></div>
+										</div>
+									</div>
+									<div class="compare-item">
+										<a href="#" class="add-in-basket">Добавить</a>
+									</div>
+								</div>
+				   		</div>
+					  	</div>
+					 </div>
+					 </div>
+					 </div>
+					</div>
+				</article>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<footer class="footer">
+	<div class="top-panel clearfix">
+		<div class="container">
+			<div class="row">
+				<div class="top-block clearfix">
+					<div class="col-xs-2 about-company">
+						<div class="row">
+							<h4>О компании</h4>
+							<ul class="foot-list list-group">
+								<li class="list-group-item"><a href="#">ООО «СК ГрандСтрой»</a></li>
+								<li class="list-group-item"><a href="#">Контакты</a></li>
+								<li class="list-group-item"><a href="#">Реквизиты</a></li>
+								<li class="list-group-item"><a href="#">Вакансии</a></li>
+								<li class="list-group-item"><a href="#">Сотрудничество</a></li>
+								<li class="list-group-item"><a href="#">Отзывы</a></li>
+								<li class="list-group-item"><a href="#">Скидки и акции</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-xs-3 how-we-work">
+						<div class="row">
+							<h4>Как мы работаем</h4>
+							<ul class="foot-list">
+								<li class="list-group-item"><a href="#">Доставка по звонку</a></li>
+								<li class="list-group-item"><a href="#">Услуги</a></li>
+								<li class="list-group-item"><a href="#">Наши объекты</a></li>
+								<li class="list-group-item"><a href="#">Вопросы  и ответы</a></li>
+								<li class="list-group-item"><a href="#">Полезные статьи</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-xs-3 catalog">
+						<div class="row">
+							<h4>Каталог</h4>
+							<ul class="foot-list">
+								<li class="list-group-item"><a href="#">Цены</a></li>
+								<li class="list-group-item"><a href="#">Кровельные материалы</a></li>
+								<li class="list-group-item"><a href="#">Фасадные материалы</a></li>
+								<li class="list-group-item"><a href="#">Материалы для крыши</a></li>
+								<li class="list-group-item"><a href="#">Кровельные работы</a></li>
+								<li class="list-group-item"><a href="#">Отделка фасадов</a></li>
+								<li class="list-group-item"><a href="#">Строительство</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-xs-4 contact-information">
+						<div class="row">
+							<h4>Контактная информация</h4>
+							<p>Вы всегда можете связаться с нами: </p>
+							<a href="#" class="links">euro-molodi@yandex.ru</a> <br>
+							<a href="#" class="links">http://www.euro-molodi.ru</a> <br>
+							<p>Phone: +7 495 999-88-49</p>
+							<p>Ждем вас в гости по адресу: Москва, м. Парк Культуры, ул. Тимура Фрунзе, дом 11, корп. 2 </p>
+
+							<div class="time-work">
+								<div>с 8 до 24 часов, без выходных</div>
+								<div class="tel-foot"><span>8 [495]</span> 150 00 44</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="bot-block clearfix">
+					<div class="col-xs-4 left-text">
+						<div class="row">
+							Принимаються к оплате:
+							<img src="images/visa.png" alt="" class="visa-icon" height="18" width="59">
+							<img src="images/master-card.png" alt="" class="master-icon" height="32" width="48">
+						</div>
+					</div>
+					<div class="col-xs-8 right-text">
+						<span><b>Оставьте отзыв</b> и помогите нам стать лучше</span>
+						<span>Оставьте отзыв о нас на</span>
+						<img src="images/yandex.png" alt="" class="yandex-icon" height="31" width="99">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="bottom-panel clearfix">
+		<div class="container">
+			<div class="col-xs-4 logo-foot">
+				<div class="row">
+					<a href="#">
+						<img src="images/foot-logo.png" alt="" height="49" width="63">
+					</a>
+						<span>© 2015 ООО «СК ГрандСтрой»</span>
+				</div>
+			</div>
+			<div class="col-xs-4 foot-social">
+				<div class="row">
+					<p>Мы в соцсетях</p>
+					<ul class="foot-social-list">
+						<li>
+							<a href="#">
+								<img src="images/facebook.png" height="34" width="34" alt="">
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/vkontakte.png" height="34" width="34" alt="">
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/twitter.png" height="34" width="34" alt="">
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/odnoklasniki.png" height="34" width="34" alt="">
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/google.png" height="34" width="34" alt="">
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-xs-4 flash">
+				<div class="row">
+					<a href="#" class="flash-land" title="Создание сайтов любой сложности, флэш сайтов, флэш-роликов, баннеров и др.">
+						<img src="images/flash.jpg" alt="" height="17" width="24">
+						<span>FlashLand.ru</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</footer>
+
+
 
 <script src="js/jquery.js"></script>
+<script src="js/jquery.mousewheel.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/less.min.js"></script>
 <script src="js/carousel.js"></script>
+<script src="js/jquery.jscrollpane.min.js"></script>
+<script>
+	$(function()
+{
+	$('.scroll-pane').jScrollPane();
+});
+</script>
+<script>
+	$(function(){
+    var wrapper = $( ".file_upload" ),
+        inp = wrapper.find( "input" ),
+        btn = wrapper.find( "button" ),
+        lbl = wrapper.find( "div" );
+
+    btn.focus(function(){
+        inp.focus()
+    });
+    inp.focus(function(){
+        wrapper.addClass( "focus" );
+    }).blur(function(){
+        wrapper.removeClass( "focus" );
+    });
+
+    var file_api = ( window.File && window.FileReader && window.FileList && window.Blob ) ? true : false;
+
+    inp.change(function(){
+        var file_name;
+        if( file_api && inp[ 0 ].files[ 0 ] ) 
+            file_name = inp[ 0 ].files[ 0 ].name;
+        else
+            file_name = inp.val().replace( "C:\\fakepath\\", '' );
+
+        if( ! file_name.length )
+            return;
+
+        if( lbl.is( ":visible" ) ){
+            lbl.text( file_name );
+            btn.text( "Выбрать" );
+        }else
+            btn.text( file_name );
+    }).change();
+
+});
+$( window ).resize(function(){
+    $( ".file_upload input" ).triggerHandler( "change" );
+});
+</script>
 <script src="js/script.js"></script>
 </body>
 </html>

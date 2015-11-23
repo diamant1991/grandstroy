@@ -149,3 +149,35 @@
 {
 	margin: 0 -3px 0 0;
 }
+
+.scroll-pane{
+	width: 315px;
+	height: 360px;
+	overflow: auto;
+}
+
+.scroll-pane .jspDrag{
+	background: #e4dfe6;
+}
+.scroll-pane .jspTrack{
+	background: transparent;
+	padding-left: 1px;
+	padding-right: 1px;
+
+}
+.scroll-pane .jspPane{
+	padding-right: 35px !important;
+}
+.scroll-pane .jspVerticalBar{
+	top: 15px;
+	width: 19px;
+	right: 19px;
+	border-radius: 6px;
+	height: 93%;
+	background: transparent;
+	border: 1px solid #c0b5c0;
+	overflow: hidden;
+}
+.scroll-pane  .jspHorizontalBar{
+	display: none !important;
+}
