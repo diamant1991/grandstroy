@@ -2030,6 +2030,9 @@ header.header{
 		&.mrg{
 			margin-bottom: 0;
 		}
+		&.top{
+			margin-top: 10px;
+		}
 }
 .bx-item{
 	text-align: center;
@@ -2865,12 +2868,15 @@ header.header{
 }
 .view1{
 	background: url(../images/view1.png)no-repeat;
+	border-radius: 0 !important;
 }
 .view2{
 	background: url(../images/view2.png)no-repeat;
+	border-radius: 0 !important;
 }
 .view3{
 	background: url(../images/view3.png)no-repeat;
+	border-radius: 0 !important;
 }
 .sort-container{
 	margin-top: 42px;
@@ -6420,12 +6426,12 @@ progress::-webkit-progress-value { background: #ed2024; }
 .clear{
 	clear: both;
 }
-.file-text{
+/* .file-text{
 	text-align: right;
 	margin-top: 5px;
 	color: #ed2024;
 	font-size: 13px;
-}
+} */
 .file-attach{
 	width: 480px;
 	float: right;
@@ -6465,4 +6471,77 @@ progress::-webkit-progress-value { background: #ed2024; }
 	font-family: 'CenturyGothicRegulat';
 	color: #fff !important;
 	text-decoration: none;
+}
+
+.elements-wrapper{
+	.tovar-item-block{
+		margin-bottom: 10px;
+
+		&:last-child{
+			padding-right: 5px;
+		}
+	}
+}
+.elements-content{
+	padding-left: 9px;
+	padding-right: 3px;
+}
+.documentation-wrapper{
+	padding-left: 35px;
+	padding-right: 35px;
+}
+.documentation-text{
+	margin-top: 25px;
+
+	p{
+		margin-bottom: 30px;
+	}
+}
+.specifications-table-block{
+	table{
+		tr{
+			&:nth-child(2n){
+				background-color: #f3f3f3;
+			}
+		}
+		td{
+			vertical-align: middle;
+			padding: 5px 0;
+			color: @text-color-second;
+
+			&:first-child{
+				width: 370px;
+				font-size: 15px;
+				font-family: 'centurygothicbold';
+				padding-left: 15px;
+			}
+			&:last-child{
+				font-size: 14px;
+				padding-right: 15px;
+			}
+			
+		}
+	}
+}
+.specifications-table{
+	padding-left: 220px;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	position: relative;
+
+	&:after{
+		content: '';
+		display: block;
+		width: 100%;
+		height: 9px;
+		background: url(../images/after-table.jpg)no-repeat;
+		position: absolute;
+		z-index: 2;
+		left: 0;
+		margin-top: 25px;
+	}
+}
+.specifications-img{
+	text-align: center;
+	padding: 30px 0;
 }
