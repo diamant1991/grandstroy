@@ -407,6 +407,8 @@ header.header{
 .serv-title{
 	font-size: 11px;
 	text-align: center;
+	height: 22px;
+	line-height: 1.2;
 	color: @text-color;
 }
 
@@ -2133,6 +2135,10 @@ header.header{
 	color: @text-color-second;
 	line-height: 1.2;
 
+	&.other{
+		height: 95px;
+	}
+
 		span{
 			text-transform: uppercase;
 		}
@@ -2211,6 +2217,9 @@ header.header{
 
 	&.pad{
 		padding-bottom: 20px;
+	}
+	&.pad-5{
+		padding-bottom: 5px;
 	}
 }
 .bestsellers .tovar-item-car .carousel-button-right2 a,
@@ -2747,6 +2756,13 @@ header.header{
 	margin-top: 85px;
 	padding-bottom: 20px;
 	background-color: #f3f3f3;
+
+	&.border-radius{
+		border-radius: 10px;
+	}
+	&.mrg-50{
+		margin-top: 50px;
+	}
 
 		&.second{
 			padding-bottom: 0;
@@ -5078,6 +5094,10 @@ progress::-webkit-progress-value { background: #ed2024; }
 	margin: 10px 0;
 	text-align: center;
 
+	&.mrg-20{
+		margin-top: 20px;
+	}
+
 		.s-sub{
 			display: inline-block;
 			width: auto;
@@ -5207,9 +5227,9 @@ progress::-webkit-progress-value { background: #ed2024; }
 	position: relative;
 }
 .small-flag{
-	width: 87px;
+	width: 93px;
 	height: 36px;
-	background: url(../images/small-flag.png)no-repeat;
+	background: url(../images/2-small-flag.png)no-repeat;
 	text-align: center;
 	color: #fff;
 	position: absolute;
@@ -5219,7 +5239,7 @@ progress::-webkit-progress-value { background: #ed2024; }
 	font-size: 15px;
 	font-weight: bold;
 	line-height: 1.3;
-	padding-right: 2px;
+	padding-right: 4px;
 
 	span{
 		font-size: 12px;
@@ -5835,6 +5855,7 @@ progress::-webkit-progress-value { background: #ed2024; }
 .color-tab-content{
   border: 1px solid #c0b5c0;
   padding: 30px 20px;
+  border-radius: 0 5px 5px 5px;
 }
 .color-tag{
 	font-size: 15px;
@@ -6554,4 +6575,13 @@ progress::-webkit-progress-value { background: #ed2024; }
 .main-important{
 	font-size: 16px;
 	color: #727272;
+}
+.description-tab{
+	p,
+	.view-all-this{
+		padding-right: 20px;
+	}
+	.container{
+		padding-left: 15px;
+	}
 }
