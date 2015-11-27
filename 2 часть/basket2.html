@@ -11,8 +11,8 @@
 	<meta name="keywords" content="" >
 	<meta name="description" content="">
 	<link rel="stylesheet" href="css/fonts.css">
-	<link rel="stylesheet" href="css/jquery.jscrollpane.css">
 	<link rel="stylesheet/less" href="less/bootstrap.less">
+	<link rel="stylesheet" href="css/jquery.rollbar.css">
 	<link rel="stylesheet/less" href="css/main.less">
 	<script src="js/modernizr-2.8.3.min.js"></script>
 </head>
@@ -77,7 +77,7 @@
 												<span class="basket"></span>
 												<div class="basket-drop">
 													<div class="basket-drop-info">
-														<div class="white-block scroll-pane">
+														<div class="white-block rollbar">
 															<div class="basket-drop-container clearfix">
 																<div class="basket-drop-img">
 																	<img src="images/img.png" alt="">
@@ -215,9 +215,21 @@
 	</div>
 </header><!-- header -->
 
-<div class="carousel-wrapper">
+<div class="carousel-wrapper basket-item">
 	<div class="container">
 		<div class="row">
+			<div class="get-order-basket">
+				<a href="#" class="get-order-basket-link">
+					<img src="images/get-order-icon.png" alt="">
+					<span>Оформить заказ</span>
+				</a>
+			</div>
+			<div class="count-basket">
+				<a href="#" class="count-basket-link">
+					<img src="images/count.png" alt="">
+					<span>Пересчитать</span>
+				</a>
+			</div>
 			<ol class="breadcrumb pad">
 			   <li><a href="#">Мягкая кровля</a></li>
 			</ol>
@@ -234,7 +246,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="total-container">
-				<div class="example-table">
+				<div class="example-table mrg">
 					<table>
 						<thead>
 							<tr>
@@ -509,7 +521,7 @@
 		        <div>Файл не выбран</div>
 		        <input type="file">
 		   		 </div>
-		   		 <div class="file-text">
+		   		 <div class="file-text-basket">
 		   		 	Приложить документацию для точного расчета
 		   		 </div>
 				</div>
@@ -520,7 +532,7 @@
 					<span>Объем: 0,074873 м <sup>3</sup></span>  
 					<span>Длина груза: 0 м</span>        
 				</div>
-				<div class="get-order-container clearfix">
+				<div class="get-order-container mrg clearfix">
 					<div class="col-xs-7"></div>
 					<div class="col-xs-5">
 						<div class="row">
@@ -548,7 +560,7 @@
 								<span><img src="images/ques-block.png" alt="" height="16" width="16"></span>
 							</div>
 							<div class="get-order-submit">
-								<div class="add-check">
+								<div class="add-check basket-check">
 									<ul>
 										<li>
 											<input id="check15" type="checkbox">
@@ -608,7 +620,7 @@
 				<article class="center-container col-xs-9">
 					<div class="row">
 						<div class="center-items mrg">
-						<div class="view-content pad">
+						<div class="view-content pad-20">
 						<div class="view-container tiles-var clearfix">
 			      	<div class="tovar-item-block car-t-block bx-item mrg tiles">
 							<div class="bx-item-container">
@@ -1110,16 +1122,15 @@
 
 <script src="js/jquery.js"></script>
 <script src="js/jquery.mousewheel.js"></script>
+<script src="js/jquery.rollbar.min.js"></script>
+<script>
+$(document).ready(function(){  
+    $('.rollbar').rollbar({zIndex:100});   
+  }); 
+</script>
 <script src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/less.min.js"></script>
 <script src="js/carousel.js"></script>
-<script src="js/jquery.jscrollpane.min.js"></script>
-<script>
-	$(function()
-{
-	$('.scroll-pane').jScrollPane();
-});
-</script>
 <script>
 	$(function(){
     var wrapper = $( ".file_upload" ),
